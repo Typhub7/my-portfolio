@@ -1,0 +1,51 @@
+[
+    {
+      "id": 1,
+      "title": "Projet 1 : Booki",
+      "image": "/images/project1.jpg",
+      "githubLink": "https://typhub7.github.io/booki-starter-code/",
+      "demoLink": "https://typhub7.github.io/booki-starter-code/",
+      "technologies": ["HTML5", "CSS3"],
+      "description" : "Objectifs : Transformer une maquette en site web responsive avec HTML5 & CSS3"
+    },
+    {
+      "id": 2,
+      "title": "Projet 2 : Ohmyfood",
+      "image": "/images/project2.png",
+      "githubLink": "https://github.com/Typhub7/P3-Ohmyfood",
+      "demoLink": "https://typhub7.github.io/P3-Ohmyfood/",
+      "technologies": ["HTML5", "CSS3", "Sass"],
+      "description" : "Objectifs : Intégrer et dynamiser une page web avec des animations CSS3",
+      "badgeText": ""
+    },
+    {
+      "id": 3,
+      "title": "Projet 3 : GameOn",
+      "image": "/images/project3.png",
+      "githubLink": "https://github.com/Typhub7/GameOn-website-FR",
+      "demoLink": "typhub7.github.io/GameOn-website-FR/",
+      "technologies": ["HTML5", "CSS3", "Javascript"],
+      "description" : "Objectifs : Créer une landing page avec Javascript",
+      "badgeText": "Premier projet JS"
+    },
+    {
+      "id": 4,
+      "title": "Projet 4 : FishEye",
+      "image": "/images/project4.png",
+      "githubLink": "https://github.com/Typhub7/Front-End-Fisheye",
+      "demoLink": "https://typhub7.github.io/Front-End-Fisheye/",
+      "technologies": ["HTML5", "CSS3", "Javascript"],
+      "description" : "Objectifs : Créez un site accessible pour une plateforme de photographes",
+      "badgeText": "Accesibilité"
+    },
+    {
+      "id": 5,
+      "title": "Projet 5 : Les petits plats",
+      "image": "/images/project5.png",
+      "githubLink": "https://github.com/Typhub7/Les-Petits-plats",
+      "demoLink": "https://typhub7.github.io/Les-Petits-plats/",
+      "technologies": ["HTML5", "CSS3", "Javascript"],
+      "description" : "Objectifs : Développez un algorithme de recherche en JavaScript",
+      "badgeText": "Green code"
+    }
+]
