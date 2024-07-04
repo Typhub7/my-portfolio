@@ -1,16 +1,21 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faReact, faJs, faCss3Alt, faHtml5, faSass } from "@fortawesome/free-brands-svg-icons";
+import { faReact, faJs, faCss3Alt, faHtml5, faSass, faNodeJs } from '@fortawesome/free-brands-svg-icons';
+import { faCogs, faFeatherAlt} from '@fortawesome/free-solid-svg-icons';
 import ProjectCard from "../components/ProjectCard";
 import { faCode } from "@fortawesome/free-solid-svg-icons";
+import MouseDown from "../components/MouseDown";
 import projectsData from "../data/projects.json"; // Chemin vers votre fichier JSON
 
 const technologyIcons = [
-  { name: "React", icon: faReact },
-  { name: "JavaScript", icon: faJs },
-  { name: "CSS3", icon: faCss3Alt },
   { name: "HTML5", icon: faHtml5 },
+  { name: "CSS3", icon: faCss3Alt },
   { name: "Sass", icon: faSass },
+  { name: "Tailwind", icon: faFeatherAlt }, 
+  { name: "JavaScript", icon: faJs },
+  { name: "React", icon: faReact },
+  { name: "TypeScript", icon: faNodeJs }, 
+  { name: "Zod", icon: faCogs }, 
   { name: "Redux", icon: faCode },
 ];
 
@@ -23,8 +28,11 @@ const ProjectPage = () => {
 
   return (
     <div className="px-4 py-8 bg-bg1">
+      <div className="flex justify-center items-center">
+        <MouseDown mouseColor="#12F7D6" />
+      </div>
       {/* Technologies Filter */}
-      <div className="flex items-center justify-center space-x-4 mb-8">
+      <div className="flex items-center justify-center space-x-4 my-12">
         <button
           className={`px-4 py-2 rounded-md border border-gray-300 ${selectedTechnology === "All" ? 'bg-main1 text-black' : 'bg-bg1 text-main1'}`}
           onClick={() => handleFilterClick("All")}
@@ -44,7 +52,7 @@ const ProjectPage = () => {
       </div>
 
       {/* Project Gallery */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mx-16">
         {projectsData.map((project) => (
           (selectedTechnology === "All" || project.technologies.includes(selectedTechnology)) && (
             <ProjectCard
@@ -54,6 +62,7 @@ const ProjectPage = () => {
               githubLink={project.githubLink}
               demoLink={project.demoLink}
               description={project.description}
+              badgeText={project.badgeText}
             />
           )
         ))}

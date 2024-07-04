@@ -1,0 +1,16 @@
+[
+    {
+      "id": 1,
+      "name": "Communication",
+      "description": "Capacité à communiquer efficacement avec différentes parties prenantes.",
+      "proficiency": "Avancé",
+      "themes": ["Communication", "Collaboration"]
+    },
+    {
+      "id": 2,
+      "name": "Problème-Solving",
+      "description": "Capacité à identifier et résoudre des problèmes de manière efficace.",
+      "proficiency": "Expert",
+      "themes": ["Problème-Solving"]
+    }
+]

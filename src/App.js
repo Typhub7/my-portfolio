@@ -2,6 +2,7 @@ import React from 'react';
 import Header from './pages/Header';
 import About from './pages/About';
 import ProjectPage from './pages/Project';
+import SoftSkillsPage from './pages/SoftSkillsPage';
 /*import Skills from './pages/Skills';*/
 import Contact from './pages/Contact';
 
@@ -11,6 +12,7 @@ function App() {
       <Header />
       <About />
       <ProjectPage />
+      <SoftSkillsPage />
       <Contact />
       
     </div>
