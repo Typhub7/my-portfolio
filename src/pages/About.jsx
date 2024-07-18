@@ -3,7 +3,7 @@ import MouseDown from "../components/MouseDown";
 
 const Contact = () => {
   return (
-    <div className="flex flex-col items-center gap-16 pt-8 pb-4 px-0 bg-bg2 bg-custom-bg bg-lightgray bg-center-50 bg-cover bg-no-repeat">
+    <div id="about" className="flex flex-col items-center gap-16 pt-8 pb-4 px-0 bg-bg2 bg-custom-bg bg-lightgray bg-center-50 bg-cover bg-no-repeat">
       <div className="flex justify-center items-center">
         <MouseDown mouseColor="#12F7D6" />
       </div>
@@ -17,7 +17,7 @@ const Contact = () => {
                 Je suis une développeuse junior spécialisée en {" "}
             <span className="text-yellowJs">JavaScript</span> et{" "}
             <span className="text-yellowJs">React</span>, passionnée par la création d'applications web modernes et interactives. </p>
-            <p className="text-base">Issue d'une <span className="text-yellowJs">reconversion professionnelle</span>  motivée par des raisons médicales, j'ai débuté ma carrière en tant qu'ingénieure biomédicale avec une maîtrise en génie biomédical et un DUT en génie électrique et informatique industrielle. J'ai suivie une formation de 14 mois avec Openclassroom.
+            <p className="text-base">J'ai débuté ma carrière en tant qu'ingénieure biomédicale dans le nucléaire avec une maîtrise en génie biomédical et un DUT en génie électrique et informatique industrielle. J'ai choisie de faire une <span className="text-yellowJs">reconversion professionnelle</span> via une formation de 14 mois avec Openclassroom.
             </p>
             </div>
         </div>
@@ -42,8 +42,9 @@ const Contact = () => {
         <div className="flex flex-col bg-bg1 items-center px-10 py-4 text-main1 text-2xl font-mono rounded-[32px_0px_32px_0px] border-2 border-solid border-bg1 w-2/6">
             <div className="px-4 py-6">
             <p className="text-base">
-                Actuellement à la <span className="text-yellowJs">recherche d'un emploi</span> à temps plein ou partiel, en travail à distance, comme developpeuse Front-End, testeur QA ou Product Owner.</p> 
-                <p className="text-base"> Je bénéficie d'une reconnaissance de travailleur handicapé.
+                Actuellement à la <span className="text-yellowJs">recherche d'un emploi</span> à temps plein ou partiel, en travail à distance, comme <span className="text-yellowJs">developpeuse Front-End, testeur QA ou Product Owner.</span></p>
+                <p className="text-base"> Je aussi prête à effectuer des formations complémentaires en alternance ou Poec.</p>
+                <p className="text-base"> Je bénéficie d'une reconnaissance de travailleur handicapé pour un handicap physique.
             </p>
             </div>
         </div>

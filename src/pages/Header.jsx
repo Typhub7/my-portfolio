@@ -13,7 +13,7 @@ export const Header = () => {
   const phrase2 = "Evolution de ma formation Openclassroom : 0% [ █ █ █ █ █ █ █ █ _ ] 90% ";
 
   return (
-    <div className="bg-bg1 flex flex-col items-center px-32 py-0 relative bg-bg-1 overflow-hidden">
+    <div id="menu" className="bg-bg1 flex flex-col items-center px-32 py-0 relative bg-bg-1 overflow-hidden">
       <div className="flex items-center justify-between px-0 py-16 relative self-stretch w-full flex-[0_0_auto]">
         <div className="inline-flex items-center gap-2 relative flex-[0_0_auto]">
           <div className="relative">

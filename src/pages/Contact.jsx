@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Button from "../components/OvaleButton";
 import MouseDown from "../components/MouseDown";
+import LineWithDots from "../helpers/lineWithDots";
 import emailjs from 'emailjs-com';
 import { validateName, validateEmail, validateMessage } from '../components/validation';
 
@@ -51,11 +52,13 @@ export const Contact = () => {
   };
 
   return (
-    <div className="flex flex-col items-center gap-16 pt-16 pb-4 px-0 bg-bg2 relative">
-      <div className="flex justify-center items-center">
+    <div id="contact" className="flex flex-col items-center gap-16 pt-16 pb-4 px-0 bg-bg2 relative">
+      <div className="flex flex-col justify-center items-center">
         <MouseDown mouseColor="#12F7D6" />
+        <h2 className="text-main1 font-sans text-6xl my-6">Contact</h2>
+        <LineWithDots width="250" />
       </div>
-      <h2 className="text-main1 font-sans text-6xl">Contact</h2>
+
       <div className="inline-flex flex-col items-center px-10 py-4 text-main1 text-2xl font-mono rounded-[32px_0px_32px_0px] border-2 border-solid border-main1">
         Envoyez moi un message
       </div>
