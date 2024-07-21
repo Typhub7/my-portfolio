@@ -3,7 +3,28 @@ import MouseDown from "../components/MouseDown";
 
 const Contact = () => {
   return (
-    <div id="about" className="flex flex-col items-center gap-16 pt-8 pb-4 px-0 bg-bg2 bg-custom-bg bg-lightgray bg-center-50 bg-cover bg-no-repeat">
+    <div id="about" className="flex flex-col items-center gap-16 pb-4 px-0 bg-bg2 bg-custom-bg bg-lightgray bg-center-50 bg-cover bg-no-repeat">
+    <div className="w-screen">
+      <svg 
+        className="separator" 
+        width="100%" 
+        height="120" 
+        viewBox="0.1 0.1 180 40" 
+        preserveAspectRatio="none"
+      >
+        <g transform="translate(-18.298844,-77.973964)">
+          <path 
+            style={{ fill: '#12F7D6' }} 
+            d="M 31.615583,86.351641 H 192.16499 v 26.901969 c 0,0 -32.03411,-14.237983 -59.62682,-12.72484 -22.34188,1.2252 -54.779359,9.72634 -54.779359,9.72634 0,0 -22.029534,3.62882 -34.471238,-1.88988 -12.441702,-5.51871 -11.67199,-22.013589 -11.67199,-22.013589 z" 
+          />
+          <path 
+            style={{ fill: '#22313f' }} 
+            d="M 18.441597,78.106256 H 198.58126 v 39.288614 c 0,0 -43.10672,-27.825245 -73.47599,-19.687823 -30.369264,8.137423 -46.832208,12.548653 -46.832208,12.548653 0,0 -32.775418,8.05972 -46.735258,0 C 17.577964,102.19598 18.441597,78.106256 18.441597,78.106256 Z" 
+          />
+        </g>
+      </svg>     
+    </div>
+      
       <div className="flex justify-center items-center">
         <MouseDown mouseColor="#12F7D6" />
       </div>
@@ -48,6 +69,26 @@ const Contact = () => {
             </p>
             </div>
         </div>
+      </div>
+      <div className="min-w-96 p-0">
+        <svg 
+        className="separator" 
+        width="100%" 
+        height="120" 
+        viewBox="0.1 0.1 180 40" 
+        preserveAspectRatio="none"
+      >
+        <g transform="scale(1, -1) translate(-17, -130)">
+          <path 
+            style={{ fill: '#12F7D6' }} 
+            d="M 31.615583,86.351641 H 192.16499 v 26.901969 c 0,0 -32.03411,-14.237983 -59.62682,-12.72484 -22.34188,1.2252 -54.779359,9.72634 -54.779359,9.72634 0,0 -22.029534,3.62882 -34.471238,-1.88988 -12.441702,-5.51871 -11.67199,-22.013589 -11.67199,-22.013589 z" 
+          />
+          <path 
+            style={{ fill: '#22313f' }} 
+            d="M 18.441597,78.106256 H 198.58126 v 39.288614 c 0,0 -43.10672,-27.825245 -73.47599,-19.687823 -30.369264,8.137423 -46.832208,12.548653 -46.832208,12.548653 0,0 -32.775418,8.05972 -46.735258,0 C 17.577964,102.19598 18.441597,78.106256 18.441597,78.106256 Z" 
+          />
+        </g>
+        </svg>
       </div>
     </div>
   );

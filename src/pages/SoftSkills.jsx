@@ -1,10 +1,11 @@
 import React from 'react';
 import MouseDown from "../components/MouseDown";
 import LineWithDots from "../helpers/lineWithDots";
+import './SoftSkills.css';
 
 const softSkillsData = [
   {
-    category: 'Développeur JavaScript React ',
+    category: 'Formation openClassroom ',
     skills: ['Autonomie', 'Gestion du temps', 'Esprit critique', "Agile" ]
   },
   {
@@ -114,19 +115,21 @@ const MindMap = ({ data, index }) => {
 
 const SoftSkills = () => {
   return (
-    <section id="softskills" className="p-6 bg-code-bg">
-      <div className="flex flex-col justify-center items-center">
+    <section id="softskills" className="bg-code-bg">
+      <b class="hr anim"></b>
+      <div className="flex flex-col justify-center items-center py-8">
         <MouseDown mouseColor="#12F7D6" />
         <h2 className="text-main1 font-sans text-6xl my-6">SoftSkills</h2>
         <LineWithDots width="350" />
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 px-12">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 px-12 pb-10">
         {softSkillsData.map((category, index) => (
           <div key={index} className="shadow-md rounded-3xl p-4">
             <MindMap data={category} index={index} />
           </div>
         ))}
       </div>
+      <b class="hr anim"></b>
     </section>
   );
 };

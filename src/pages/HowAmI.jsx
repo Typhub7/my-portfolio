@@ -6,7 +6,7 @@ import LineWithDots from "../helpers/lineWithDots";
 
 const HowAmIPage = () => {
   return (
-    <section id="portfolio" className="p-6 bg-bg1">
+    <section id="howamI" className="pt-6 pb-12 bg-bg3">
       <div className="flex flex-col justify-center items-center">
         <h2 className="text-main1 font-sans text-6xl my-6">Developpeuse Front End</h2>
         <LineWithDots width="250" />

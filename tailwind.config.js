@@ -8,6 +8,7 @@ module.exports = {
       colors: {
         bg1: '#292F36',
         bg2: '#1A1E23',
+        bg3: '#22313f',
         main1: '#12F7D6',
         main2: '#98FAEC',
         white: '#FFFFFF',
