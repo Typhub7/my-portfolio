@@ -1,7 +1,9 @@
 import React from 'react';
 import MouseDown from "../components/MouseDown";
+import { smoothScroll } from '../helpers/smoothScroll';
 import LineWithDots from "../helpers/lineWithDots";
 import SunburstChart from '../components/SunburstChart';
+import "./SoftSkills.css"
 
 const data = {
   name: "Developpeur Javascript",
@@ -64,16 +66,20 @@ const data = {
 
 const SoftSkills = () => {
   return (
-    <section id="softskills" className="bg-code-bg">
+    <section className="bg-code-bg">
       <b class="hr anim"></b>
       <div className="flex flex-col justify-center items-center py-8">
-        <MouseDown mouseColor="#12F7D6" />
-        <h2 className="text-main1 font-sans text-6xl my-6">SoftSkills</h2>
+        <div id="softskills" className='border-2 border-bg2 rounded-3xl px-6 bg-gradient-to-b from-bg4 to-bg5'>
+          <h2 className="text-main1 font-sans text-6xl my-4 text-shadow-custom">SoftSkills</h2>
+        </div>
         <LineWithDots width="350" />
-        <div className="shadow-md rounded-full w-1/2 ">
+        <div className="shadow-md rounded-full w-5/12 ">
             <SunburstChart data={data} />
         </div>
       </div>
+      <button onClick={() => smoothScroll('#contact')} className="flex justify-center mt-8 pb-8 w-full">
+          <MouseDown mouseColor="#12F7D6" />
+      </button>
       <b class="hr anim"></b>
     </section>
   );

@@ -7,6 +7,7 @@ import { faCode } from "@fortawesome/free-solid-svg-icons";
 import MouseDown from "../components/MouseDown";
 import LineWithDots from "../helpers/lineWithDots";
 import projectsData from "../data/projects.json";
+import { smoothScroll } from '../helpers/smoothScroll';
 
 const technologyIcons = [
   { name: "HTML5", icon: faHtml5 },
@@ -27,11 +28,11 @@ const ProjectPage = () => {
     setSelectedTechnology(technology);
   };
 
-  return (
-    <div id="project" className="bg-bg1 px-4 py-8">
+  return ( 
+    <div className="bg-bg1 px-4 py-8">
       <div className="flex flex-col justify-center items-center">
-        <MouseDown mouseColor="#12F7D6" />
-        <h2 className="text-main1 font-sans text-6xl my-6">Mes Projets</h2>
+        <div id="project"></div>
+        <h2 className="text-main1 font-sans text-6xl my-6 text-shadow-custom">Projets</h2>
         <LineWithDots width="350" />
       </div>
       
@@ -71,6 +72,9 @@ const ProjectPage = () => {
           )
         ))}
       </div>
+      <button onClick={() => smoothScroll('#softskills')} className="flex justify-center mt-8 pt-8 w-full">
+          <MouseDown mouseColor="#12F7D6" />
+      </button>
     </div>
   );
 };

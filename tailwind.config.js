@@ -15,6 +15,8 @@ module.exports = {
         redHtml: '#E54F26',
         blueCss: '#0C73B8',
         yellowJs: '#F0DB4F',
+        bg4 : '#d9c231',
+        bg5: '#ee4395',
       },
       fontFamily: {
         sans: ['Ubuntu', 'sans-serif'],
@@ -40,6 +42,18 @@ module.exports = {
         'custom': '160px 0 160px 0',
         'custom2': '80px 80px 80px 80px',
       },
+      textShadow: {
+        'custom': '1px 2px 3px black',
+      },
+      keyframes: {
+        bounce: {
+          '0%, 100%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(-0.75rem)' },
+        },
+      },
+      animation: {
+        bounce: 'bounce 1s infinite',
+      },
       typography: (theme) => ({
         DEFAULT: {
           css: {
@@ -53,5 +67,7 @@ module.exports = {
       }),
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwindcss-textshadow')
+  ],
 }

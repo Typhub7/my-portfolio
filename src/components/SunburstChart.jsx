@@ -29,6 +29,7 @@ const SunburstChart = ({ data }) => {
       .attr("y1", "00%")
       .attr("x2", "100%")
       .attr("y2", "100%")
+      .attr("data-testid", "grad1") 
       .selectAll("stop")
       .data([
         { offset: "20%", color: "#d9c231" }, // Start color
