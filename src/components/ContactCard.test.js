@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom'
-import ContactCard from './ContactCard'; // ajustez le chemin si nécessaire
+import ContactCard from './ContactCard';
 
 test('renders the ContactCard component', () => {
   render(<ContactCard />);

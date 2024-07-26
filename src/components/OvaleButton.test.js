@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, screen, fireEvent } from '@testing-library/react';
 import '@testing-library/jest-dom'
-import Button from './OvaleButton'; // ajustez le chemin si nécessaire
+import Button from './OvaleButton'; 
 
 test('renders the Button component with correct styles', () => {
   render(

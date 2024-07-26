@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, screen, fireEvent } from '@testing-library/react';
 import '@testing-library/jest-dom';
-import FloatingMenu from './FloatingMenu'; // ajustez le chemin si nécessaire
+import FloatingMenu from './FloatingMenu';
 import { smoothScroll } from '../helpers/smoothScroll';
 
 jest.mock('../helpers/smoothScroll', () => ({

@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, screen, fireEvent } from '@testing-library/react';
 import '@testing-library/jest-dom';
-import SearchInput from './SearchInput'; // Assure-toi que le chemin est correct
+import SearchInput from './SearchInput'; 
 
 describe('SearchInput Component', () => {
   test('renders the SearchInput component correctly', () => {

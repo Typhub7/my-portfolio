@@ -35,10 +35,12 @@ test("renders the ProjectCard component with all elements", () => {
   expect(demoLink).toHaveAttribute('href', project.demoLink);
 
   // Vérifie que la description est cachée par défaut en testant son style
-  const description = screen.getByText("This is a project description.");
-  expect(description).not.toBeVisible(); // Initialement cachée
+  const descriptionDiv = screen.getByTestId('ProjectCard-description');
+  expect(descriptionDiv).toHaveClass('opacity-0');
+
 
   // Simule le survol
+  const description = screen.getByText("This is a project description.");
   fireEvent.mouseEnter(screen.getByText(project.title));
   expect(description).toBeVisible(); // Devient visible au survol
 });

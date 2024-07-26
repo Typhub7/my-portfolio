@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
-import Skills from './Skills'; // Assure-toi que ce chemin est correct
+import Skills from './Skills'; 
 
 describe('Skills Component', () => {
   test('renders all skill logos with correct src and alt text', () => {

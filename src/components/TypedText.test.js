@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, screen, waitFor } from '@testing-library/react';
 import '@testing-library/jest-dom';
-import TypedText from './TypedText'; // Assure-toi que le chemin est correct
+import TypedText from './TypedText'; 
 
 describe('TypedText Component', () => {
   test('renders and animates text correctly', async () => {

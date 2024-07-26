@@ -1,7 +1,7 @@
 /*import React from 'react';
 import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
-import SunburstChart from './SunburstChart'; // Assure-toi que le chemin est correct
+import SunburstChart from './SunburstChart'; 
 
 describe('SunburstChart Component', () => {
   test('renders the SVG element', () => {

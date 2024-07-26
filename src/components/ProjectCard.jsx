@@ -31,8 +31,10 @@ const ProjectCard = ({ title, image, githubLink, demoLink, description,badgeText
           </a>
         </div>
       </div>
-      <div className="absolute inset-0 bg-bg1 bg-opacity-75 text-yellowJs p-4 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300 z-20">
-        <p>{description}</p>
+      <div 
+      className="absolute inset-0 bg-bg1 bg-opacity-75 text-yellowJs p-4 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300 z-20"
+      data-testid="ProjectCard-description">
+        <p >{description}</p>
       </div>
     </div>
   );
