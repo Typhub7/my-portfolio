@@ -12,10 +12,45 @@ const SunburstChart = ({ data }) => {
     // Clear previous content
     d3.select(svgRef.current).selectAll("*").remove();
 
-    // Create the color scale
-    const color = d3.scaleOrdinal(d3.quantize(d3.interpolateWarm, data.children.length + 1));
+    const colors = [
+      '#91cdcd', 
+      '#48acab',
+      '#7fc5c4',
+      '#5bb5b4',
+      '#36a4a3',
+      '#6dbdbc'
+    ];
 
-    // Define the gradient
+    // Function to create a gradient based on a base color
+    const createGradient = (svg, color, id) => {
+      const gradient = svg.append('defs')
+        .append('linearGradient')
+        .attr('id', id)
+        .attr('x1', '0%')
+        .attr('y1', '0%')
+        .attr('x2', '100%')
+        .attr('y2', '100%');
+
+      gradient.append('stop')
+        .attr('offset', '0%')
+        .attr('style', `stop-color:${d3.color(color).darker(2)};stop-opacity:1`);
+
+      gradient.append('stop')
+        .attr('offset', '100%')
+        .attr('style', `stop-color:${d3.color(color).brighter(1)};stop-opacity:1`);
+    };
+
+    // Create a gradient for each color
+    colors.forEach((color, index) => {
+      createGradient(d3.select(svgRef.current), color, `gradient-${index}`);
+    });
+
+    // Create a color scale using the gradient ids
+    const color = d3.scaleOrdinal()
+      .domain(data.children.map(d => d.name))
+      .range(colors.map((color, index) => `url(#gradient-${index})`));
+
+    // Define the gradient for the center circle
     const svg = d3.select(svgRef.current)
       .attr("viewBox", [-width / 2, -width / 2, width, width])
       .style("font-size", "10px")
@@ -25,20 +60,19 @@ const SunburstChart = ({ data }) => {
     svg.append("defs")
       .append("radialGradient")
       .attr("id", "grad1")
-      .attr("x1", "00%")
-      .attr("y1", "00%")
+      .attr("x1", "0%")
+      .attr("y1", "0%")
       .attr("x2", "100%")
       .attr("y2", "100%")
       .attr("data-testid", "grad1") 
       .selectAll("stop")
       .data([
-        { offset: "20%", color: "#d9c231" }, // Start color
-        { offset: "100%", color: "#ee4395" } // End color
+        { offset: "20%", color: "#c8e6e6" }, // Start color
+        { offset: "100%", color: "#6dbdbc" } // End color
       ])
       .enter().append("stop")
       .attr("offset", d => d.offset)
       .attr("stop-color", d => d.color);
-
 
     // Compute the layout
     const hierarchy = d3.hierarchy(data)

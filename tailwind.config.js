@@ -15,8 +15,8 @@ module.exports = {
         redHtml: '#E54F26',
         blueCss: '#0C73B8',
         yellowJs: '#F0DB4F',
-        bg4 : '#d9c231',
-        bg5: '#ee4395',
+        bg4 : '#277777',
+        bg5: '#1d5959"',
       },
       fontFamily: {
         sans: ['Ubuntu', 'sans-serif'],
