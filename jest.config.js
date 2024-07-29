@@ -10,4 +10,7 @@ module.exports = {
   moduleNameMapper: {
     '\\.(css|scss)$': 'identity-obj-proxy',
   },
+  collectCoverage: true,
+  coverageDirectory: 'coverage',
+  coverageReporters: ['json', 'lcov', 'text', 'clover'],
 };
