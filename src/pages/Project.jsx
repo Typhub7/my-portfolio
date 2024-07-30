@@ -37,9 +37,9 @@ const ProjectPage = () => {
       </div>
       
       {/* Technologies Filter */}
-      <div className="flex items-center justify-center space-x-4 my-12">
+      <div className="flex items-center justify-center flex-wrap space-x-4 px-5 my-12 gap-2 lg:gap-1">
         <button
-          className={`px-4 py-2 rounded-md border border-gray-300 ${selectedTechnology === "All" ? 'bg-main1 text-black' : 'bg-bg1 text-main1'}`}
+          className={`px-4 py-2 rounded-md border text-xs lg:text-base border-gray-300 ${selectedTechnology === "All" ? 'bg-main1 text-black' : 'bg-bg1 text-main1'}`}
           onClick={() => handleFilterClick("All")}
         >
           All
@@ -47,7 +47,7 @@ const ProjectPage = () => {
         {technologyIcons.map((tech, index) => (
           <button
             key={index}
-            className={`px-4 py-2 rounded-md border border-gray-300 ${selectedTechnology === tech.name ? 'bg-main1 text-black'  : 'bg-bg1 text-main1'}`}
+            className={`px-4 py-2 rounded-md border text-xs lg:text-base border-gray-300 ${selectedTechnology === tech.name ? 'bg-main1 text-black'  : 'bg-bg1 text-main1'}`}
             onClick={() => handleFilterClick(tech.name)}
           >
             <FontAwesomeIcon icon={tech.icon} className="mr-2" />

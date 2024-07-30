@@ -29,12 +29,12 @@ const skills = [
 const Skills = () => {
   return (
     <div>
-      <h2 className=" text-main1 text-2xl font-bold m-6 items-center">Compétences</h2>
+      <h2 className=" text-main1 text-base lg:text-2xl font-bold m-4 lg:m-6 items-center">Compétences</h2>
       <div className="grid grid-cols-4 gap-4">
         {skills.map((skill, index) => (
           <div key={index} className="flex flex-col items-center my-2">
-            <img src={skill.logo} alt={skill.name} className="w-12 h-12 mb-2" />
-            <p className='text-main1'>{skill.name}</p>
+            <img src={skill.logo} alt={skill.name} className="w-6 h-6 lg:w-12 lg:h-12 mb-2" />
+            <p className='text-main1 text-xs lg:text-base'>{skill.name}</p>
           </div>
         ))}
       </div>

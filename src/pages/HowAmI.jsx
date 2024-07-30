@@ -12,14 +12,14 @@ const HowAmIPage = () => {
       <div className="flex flex-col">
         <h2 className="text-main1 text-center font-sans text-2xl md:text-4xl lg:text-6xl my-6">Developpeuse Front End</h2>
         <LineWithDots />
-        <div className="flex flex-col lg:flex-row gap-10 lg:gap-0 justify-around my-10">
-          <div className="bg-bg2 shadow-md shadow-main1 rounded-custom border-white w-96 h-custom-h flex justify-center items-center">
+        <div className="flex flex-col lg:flex-row gap-10 lg:gap-0 items-center justify-around my-10">
+          <div className="bg-bg2 shadow-md shadow-main1 rounded-custom2 border-white w-64 lg:w-96 h-72 lg:h-custom-h flex justify-center items-center">
             <Contact />
           </div>
           <div className="bg-white shadow-md rounded-3xl p-4">
             <WelcomeAnimation />
           </div>
-          <div className="bg-bg2 shadow-3d shadow-white rounded-custom2 p-4 w-96">
+          <div className="bg-bg2 shadow-3d shadow-white rounded-custom2 p-4 w-80 lg:w-96">
             <Skills />
           </div>
         </div>

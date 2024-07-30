@@ -31,7 +31,7 @@ const TypedText = ({ phrase, initialDelay }) => {
   }, [phrase, initialDelay]);
 
   return (
-    <div className="text-sm md:text-lg xl:text-xl  text-white font-mono">
+    <div className="text-xs md:text-lg xl:text-xl  text-white font-mono">
       {currentText}
     </div>
   );

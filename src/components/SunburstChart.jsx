@@ -67,8 +67,8 @@ const SunburstChart = ({ data }) => {
       .attr("data-testid", "grad1") 
       .selectAll("stop")
       .data([
-        { offset: "20%", color: "#c8e6e6" }, // Start color
-        { offset: "100%", color: "#6dbdbc" } // End color
+        { offset: "10%", color: "#d8f8f8" }, // Start color
+        { offset: "100%", color: "#36a4a3" } // End color
       ])
       .enter().append("stop")
       .attr("offset", d => d.offset)

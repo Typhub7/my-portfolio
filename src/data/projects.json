@@ -1,7 +1,7 @@
 [
     {
       "id": 1,
-      "title": "Projet 1 : Booki",
+      "title": "Booki",
       "image": "/images/project1.jpg",
       "githubLink": "https://typhub7.github.io/booki-starter-code/",
       "demoLink": "https://typhub7.github.io/booki-starter-code/",
@@ -11,7 +11,7 @@
     },
     {
       "id": 2,
-      "title": "Projet 2 : Ohmyfood",
+      "title": "Ohmyfood",
       "image": "/images/project2.png",
       "githubLink": "https://github.com/Typhub7/P3-Ohmyfood",
       "demoLink": "https://typhub7.github.io/P3-Ohmyfood/",
@@ -21,7 +21,7 @@
     },
     {
       "id": 3,
-      "title": "Projet 3 : GameOn",
+      "title": "GameOn",
       "image": "/images/project3.png",
       "githubLink": "https://github.com/Typhub7/GameOn-website-FR",
       "demoLink": "typhub7.github.io/GameOn-website-FR/",
@@ -31,7 +31,7 @@
     },
     {
       "id": 4,
-      "title": "Projet 4 : FishEye",
+      "title": "FishEye",
       "image": "/images/project4.png",
       "githubLink": "https://github.com/Typhub7/Front-End-Fisheye",
       "demoLink": "https://typhub7.github.io/Front-End-Fisheye/",
@@ -41,7 +41,7 @@
     },
     {
       "id": 5,
-      "title": "Projet 5 : Petits plats",
+      "title": "Petits plats",
       "image": "/images/project5.jpg",
       "githubLink": "https://github.com/Typhub7/Les-Petits-plats",
       "demoLink": "https://typhub7.github.io/Les-Petits-plats/",
@@ -51,7 +51,7 @@
     },
     {
       "id": 6,
-      "title": "Projet 6 : Kasa",
+      "title": "Kasa",
       "image": "/images/project6.jpg",
       "githubLink": "https://github.com/Typhub7/Kasa",
       "demoLink": "https://typhub7.github.io/Kasa/",
@@ -61,7 +61,7 @@
     },
     {
       "id": 7,
-      "title": "Projet 7 : SportSee",
+      "title": "SportSee",
       "image": "/images/project7.jpg",
       "githubLink": "https://github.com/Typhub7/SportSee",
       "demoLink": "https://typhub7.github.io/SportSee/",
@@ -71,7 +71,7 @@
     },
     {
       "id": 8,
-      "title": "Projet 8 : ArgentBank",
+      "title": "ArgentBank",
       "image": "/images/project8.png",
       "githubLink": "https://github.com/Typhub7/argentbank-front",
       "demoLink": "https://github.com/Typhub7/argentbank-front#installation",
