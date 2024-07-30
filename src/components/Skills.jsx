@@ -7,7 +7,7 @@ import sassLogo from '../assets/sass.png';
 import typescriptLogo from '../assets/typescript.png';
 import reduxLogo from '../assets/redux.png';
 import tailwindLogo from '../assets/tailwind.png';
-import apiLogo from '../assets/api.png';
+import strapi from '../assets/strapi.png';
 import jestLogo from '../assets/jest.png';
 import cypressLogo from '../assets/cypress.png';
 
@@ -21,16 +21,16 @@ const skills = [
   { name: 'Sass', logo: sassLogo },
   { name: 'Tailwind', logo: tailwindLogo },
   { name: 'Redux', logo: reduxLogo },
-  { name: 'API', logo: apiLogo },
+  { name: 'Strapi', logo: strapi },
   { name: 'Jest', logo: jestLogo },
   { name: 'Cypress', logo: cypressLogo },
 ];
 
 const Skills = () => {
   return (
-    <div className=''>
-      <h2 className=" text-main1 text-2xl font-bold mb-4 ml-6">Compétences</h2>
-      <div className="grid grid-cols-4 gap-4 ">
+    <div>
+      <h2 className=" text-main1 text-2xl font-bold m-6 items-center">Compétences</h2>
+      <div className="grid grid-cols-4 gap-4">
         {skills.map((skill, index) => (
           <div key={index} className="flex flex-col items-center my-2">
             <img src={skill.logo} alt={skill.name} className="w-12 h-12 mb-2" />

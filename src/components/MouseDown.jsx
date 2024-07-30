@@ -2,7 +2,7 @@ import React from 'react';
 
 const MouseDown = ({ mouseColor = '#F0DB4F' }) => {
   return (
-    <div className="w-8 hover:animate-bounce">
+    <div className="w-5 lg:w-8 hover:animate-bounce">
       <svg 
         xmlns="http://www.w3.org/2000/svg" 
         shape-rendering="geometricPrecision" 

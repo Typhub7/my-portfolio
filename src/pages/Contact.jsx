@@ -54,8 +54,8 @@ export const Contact = () => {
     <div className="flex flex-col items-center gap-16 pt-16 pb-4 px-0 bg-bg2 relative">
       <div className="flex flex-col justify-center items-center">
         <div id="contact"></div>
-        <h2 className="text-main1 font-sans text-6xl my-6">Contact</h2>
-        <LineWithDots width="250" />
+        <h2 className="text-main1 font-sans text-2xl md:text-4xl lg:text-6xl my-6">Contact</h2>
+        <LineWithDots />
       </div>
 
       <div className="inline-flex flex-col items-center px-10 py-4 text-main1 text-2xl font-mono rounded-[32px_0px_32px_0px] border-2 border-solid border-main1">

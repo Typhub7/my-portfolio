@@ -32,8 +32,8 @@ const ProjectPage = () => {
     <div className="bg-bg1 px-4 py-8">
       <div className="flex flex-col justify-center items-center">
         <div id="project"></div>
-        <h2 className="text-main1 font-sans text-6xl my-6 text-shadow-custom">Projets</h2>
-        <LineWithDots width="350" />
+        <h2 className="text-main1 font-sans text-2xl md:text-4xl lg:text-6xl my-6 text-shadow-custom">Projets</h2>
+        <LineWithDots />
       </div>
       
       {/* Technologies Filter */}

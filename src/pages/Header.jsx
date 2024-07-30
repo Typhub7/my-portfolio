@@ -4,16 +4,16 @@ import LinkedIn from '../components/LinkedIn';
 import TypedText from '../components/TypedText';
 
 export const Header = () => {
-  const phrase1 = "Bonjour, je suis Caroline Drevon, en formation développeuse Front-end.";
-  const phrase2 = "Evolution de ma formation Openclassroom : 0% [ █ █ █ █ █ █ █ █ _ ] 90% ";
+  const phrase1 = "Bonjour, je suis Caroline Drevon, développeuse Front-end.";
+  const phrase2 = "Bienvenue sur mon portfolio !";
 
   return (
-    <div id="menu" className="bg-bg1 flex flex-col items-center px-32 py-0 relative bg-bg-1 overflow-hidden">
-      <div className="flex items-center justify-between px-0 py-8 relative self-stretch w-full flex-[0_0_auto]">
+    <div id="menu" className="bg-bg1 flex flex-col items-center px-16 md:px-32 py-0 relative bg-bg-1 overflow-hidden">
+      <div className="flex flex-col xl:flex-row gap-4 xl:gap-0 items-center justify-between px-0 py-8 relative self-stretch w-full flex-[0_0_auto]">
         <div className="inline-flex items-center gap-2">
           <div className="relative">
             <TypedText phrase={phrase1} />
-            <TypedText phrase={phrase2} initialDelay={7000} />
+            <TypedText phrase={phrase2} initialDelay={2000} />
           </div>
         </div>
         <div className="inline-flex items-center gap-16">

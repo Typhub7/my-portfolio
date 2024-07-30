@@ -18,6 +18,13 @@ module.exports = {
         bg4 : '#277777',
         bg5: '#1d5959"',
       },
+      width: {
+        'custom-400': '400px',
+        'custom-500': '520px',
+      },
+      height: {
+        'custom-h': '450px',
+      },
       fontFamily: {
         sans: ['Ubuntu', 'sans-serif'],
         mono: ['IBM Plex Mono', 'monospace'],

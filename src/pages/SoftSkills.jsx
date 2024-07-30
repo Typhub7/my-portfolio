@@ -70,9 +70,9 @@ const SoftSkills = () => {
       <b class="hr anim"></b>
       <div className="flex flex-col justify-center items-center py-8">
         <div id="softskills" className='border-2 border-bg2 rounded-3xl px-6 bg-gradient-to-b from-bg4 to-bg5'>
-          <h2 className="text-main1 font-sans text-6xl my-4 text-shadow-custom">SoftSkills</h2>
+          <h2 className="text-main1 font-sans text-2xl md:text-4xl lg:text-6xl my-4 text-shadow-custom">SoftSkills</h2>
         </div>
-        <LineWithDots width="350" />
+        <LineWithDots />
         <div className="shadow-md rounded-full w-5/12 ">
             <SunburstChart data={data} />
         </div>

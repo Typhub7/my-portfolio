@@ -26,46 +26,38 @@ const Contact = () => {
         </svg>     
       </div>
       <div id="about"></div>
-      <div  className="inline-flex flex-col bg-bg1 items-center px-10 py-8 mb-4 text-white text-2xl font-mono rounded-[32px_0px_32px_0px] border-2 border-solid border-main1 text-shadow-custom">
+      <div  className="inline-flex flex-col bg-bg1 items-center px-10 py-8 mb-4 text-white text-xl lg:text-2xl font-mono rounded-[32px_0px_32px_0px] border-2 border-solid border-main1 text-shadow-custom">
         Qui suis-je ?
       </div>
-      <div className="flex justify-center w-5/6 gap-10 flex-wrap pb-8">      
-        <div className="flex flex-col bg-bg1 items-center px-10 py-4 text-main1 text-2xl font-mono rounded-[32px_0px_32px_0px] border-2 border-solid border-bg1 w-2/6">
-            <div className="px-4 py-6">
-            <p className="text-base">
-                Je suis une développeuse junior spécialisée en {" "}
+      <div className="flex flex-col lg:flex-row items-center justify-center w-3/4 lg:w-2/3 gap-6 lg:gap-14 lg:flex-wrap pb-8">      
+        <div className=" bg-bg1 items-center p-9 gap-4 text-main1 text-sm lg:text-base font-mono rounded-[32px_0px_32px_0px] border-2 border-solid border-bg1 w-full h-auto lg:w-custom-500 lg:h-80">
+            <p>
+                Je suis une développeuse spécialisée en {" "}
             <span className="text-yellowJs">JavaScript</span> et{" "}
             <span className="text-yellowJs">React</span>, passionnée par la création d'applications web modernes et interactives. </p>
-            <p className="text-base">J'ai débuté ma carrière en tant qu'<span className="text-yellowJs">ingénieure biomédicale</span> dans le nucléaire avec une maîtrise en génie biomédical et un DUT en génie électrique et informatique industrielle. J'ai choisie de faire une <span className="text-yellowJs">reconversion professionnelle</span> via une formation de 14 mois avec Openclassroom.
+            <p>J'ai débuté ma carrière en tant qu'<span className="text-yellowJs">ingénieure biomédicale</span> dans le nucléaire avec une maîtrise en génie biomédical et un DUT en génie électrique et informatique industrielle. J'ai choisie de faire une <span className="text-yellowJs">reconversion professionnelle</span> via une formation de 14 mois avec Openclassroom.
             </p>
-            </div>
         </div>
-        <div className="flex flex-col bg-bg1 items-center px-10 py-4 text-main1 text-2xl font-mono rounded-[32px_0px_32px_0px] border-2 border-solid border-bg1 w-2/6">
-            <div className="px-4 py-6">
-            <p className="text-base">
-                Ma transition vers le développement informatique a été guidée par ma constante volonté de m'améliorer et de relever de nouveaux défis. Je suis {" "}
-                <span className="text-yellowJs">optimiste</span>, {" "}
-                <span className="text-yellowJs">perfectionniste</span> et j'aime apprendre continuellement. </p>
-                <p className="text-base">Mon parcours m'a inculqué une <span className="text-yellowJs">rigueur scientifique </span> et une capacité à résoudre des problèmes complexes, des compétences que j'applique désormais dans le développement logiciel.
-            </p>
-            </div>
+        <div className="flex flex-col bg-bg1 items-center p-9 gap-4 text-main1 text-sm lg:text-base font-mono rounded-[32px_0px_32px_0px] border-2 border-solid border-bg1 w-full h-auto lg:w-custom-500 lg:h-80 ">
+            <p>
+            Ma transition vers le développement informatique a été guidée par ma constante volonté de m'améliorer et de relever de nouveaux défis. Je suis {" "}
+            <span className="text-yellowJs">optimiste</span>, {" "}
+            <span className="text-yellowJs">perfectionniste</span> et j'aime apprendre continuellement. </p>
+              <p>Mon parcours m'a inculqué une <span className="text-yellowJs">rigueur scientifique </span> et une capacité à résoudre des problèmes complexes, des compétences que j'applique désormais dans le développement et le test.
+              </p>
         </div>
-        <div className="flex flex-col bg-bg1 items-center px-10 py-4 text-main1 text-2xl font-mono rounded-[32px_0px_32px_0px] border-2 border-solid border-bg1 w-2/6">
-            <div className="px-4 py-6">
-            <p className="text-base">
-                En dehors du code, je trouve un équilibre précieux en passant du temps avec mon mari et mes enfants. Je nourris également une passion pour l'archéologie et la détection de métaux , des intérêts qui reflètent ma <span className="text-yellowJs">curiosité  </span>et ma <span className="text-yellowJs">persévérance </span>. </p>
-                <p className="text-base">Mon voyage dans l'informatique a débuté dès l'enfance avec du BASIC sur un Amstrad 6128, une expérience qui a semé les graines de <span className="text-yellowJs">ma passion pour la technologie.</span>
+        <div className="flex flex-col bg-bg1 items-center p-9 gap-4 text-main1 text-sm lg:text-base font-mono rounded-[32px_0px_32px_0px] border-2 border-solid border-bg1 w-full h-auto lg:w-custom-500 lg:h-80">
+            <p>
+                En dehors du code, je trouve un équilibre précieux en passant du temps avec mon mari et mes enfants. Je nourris également une passion pour l'archéologie et la détection de métaux, des intérêts qui reflètent ma <span className="text-yellowJs">curiosité  </span>et ma <span className="text-yellowJs">persévérance </span>. </p>
+                <p>Mon voyage dans l'informatique a débuté dès l'enfance avec du BASIC sur un Amstrad 6128, une expérience qui a semé les graines de <span className="text-yellowJs">ma passion pour la technologie.</span>
             </p>
-            </div>
         </div>
-        <div className="flex flex-col bg-bg1 items-center px-10 py-4 text-main1 text-2xl font-mono rounded-[32px_0px_32px_0px] border-2 border-solid border-bg1 w-2/6">
-            <div className="px-4 py-6">
-            <p className="text-base">
-                Actuellement à la <span className="text-yellowJs">recherche d'un emploi</span> à temps plein ou partiel, en travail à distance, comme <span className="text-yellowJs">developpeuse Front-End, testeur QA ou Product Owner.</span></p>
-                <p className="text-base"> Je aussi prête à effectuer des formations complémentaires en alternance ou Poec.</p>
-                <p className="text-base"> Je bénéficie d'une reconnaissance de travailleur handicapé pour un handicap physique.
+        <div className="flex flex-col bg-bg1 items-center p-9 gap-4 text-main1 text-sm lg:text-base  font-mono rounded-[32px_0px_32px_0px] border-2 border-solid border-bg1 w-full h-auto lg:w-custom-500 lg:h-80">
+            <p>
+                Actuellement à la <span className="text-yellowJs">recherche d'un emploi</span> à temps plein ou partiel, en travail à distance, comme <span className="text-yellowJs">developpeuse Front-End ou testeuse QA. </span></p>
+                <p> Je aussi prête à effectuer des formations complémentaires en alternance ou Poec.</p>
+                <p> Je bénéficie d'une reconnaissance de travailleur handicapé pour un handicap physique.
             </p>
-            </div>
         </div>
       </div>
       <button onClick={() => smoothScroll('#project')} className="flex justify-center items-end">

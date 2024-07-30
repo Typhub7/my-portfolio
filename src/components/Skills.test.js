@@ -16,7 +16,7 @@ describe('Skills Component', () => {
       { name: 'Sass', src: 'sass.png', alt: 'Sass' },
       { name: 'Tailwind', src: 'tailwind.png', alt: 'Tailwind' },
       { name: 'Redux', src: 'redux.png', alt: 'Redux' },
-      { name: 'API', src: 'api.png', alt: 'API' },
+      { name: 'Strapi', src: 'strapi.png', alt: 'Strapi' },
       { name: 'Jest', src: 'jest.png', alt: 'Jest' },
       { name: 'Cypress', src: 'cypress.png', alt: 'Cypress' }
     ];

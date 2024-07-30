@@ -14,7 +14,7 @@ const TypedText = ({ phrase, initialDelay }) => {
         } else {
           clearInterval(interval);
         }
-      }, 100); // Vitesse de frappe (100ms)
+      }, 30); // Vitesse de frappe 
 
       return () => clearInterval(interval);
     };
@@ -31,7 +31,7 @@ const TypedText = ({ phrase, initialDelay }) => {
   }, [phrase, initialDelay]);
 
   return (
-    <div className="text-xl text-white font-mono">
+    <div className="text-sm md:text-lg xl:text-xl  text-white font-mono">
       {currentText}
     </div>
   );
