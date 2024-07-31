@@ -29,15 +29,15 @@ const ProjectPage = () => {
   };
 
   return ( 
-    <div className="bg-bg1 px-4 py-8">
+    <div className="bg-bg1 px-4 py-4 lg:py-8">
       <div className="flex flex-col justify-center items-center">
         <div id="project"></div>
-        <h2 className="text-main1 font-sans text-2xl md:text-4xl lg:text-6xl my-6 text-shadow-custom">Projets</h2>
+        <h2 className="text-main1 font-sans text-2xl md:text-4xl lg:text-6xl my-2 lg:my-6 text-shadow-custom">Projets</h2>
         <LineWithDots />
       </div>
       
       {/* Technologies Filter */}
-      <div className="flex items-center justify-center flex-wrap space-x-4 px-5 my-12 gap-2 lg:gap-1">
+      <div className="flex items-center justify-center flex-wrap space-x-4 px-5 my-6 lg:my-12 gap-2 lg:gap-1">
         <button
           className={`px-4 py-2 rounded-md border text-xs lg:text-base border-gray-300 ${selectedTechnology === "All" ? 'bg-main1 text-black' : 'bg-bg1 text-main1'}`}
           onClick={() => handleFilterClick("All")}
@@ -57,7 +57,7 @@ const ProjectPage = () => {
       </div>
 
       {/* Project Gallery */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mx-16">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12 mx-16">
         {projectsData.map((project) => (
           (selectedTechnology === "All" || project.technologies.includes(selectedTechnology)) && (
             <ProjectCard

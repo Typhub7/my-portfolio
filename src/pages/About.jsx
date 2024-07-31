@@ -4,7 +4,7 @@ import { smoothScroll } from '../helpers/smoothScroll';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronRight, faChevronLeft } from '@fortawesome/free-solid-svg-icons';
 
-const Contact = () => {
+const About = () => {
   const [hasTime, setHasTime] = useState(true);
 
   const handleToggle = () => {
@@ -33,12 +33,12 @@ const Contact = () => {
         </svg>     
       </div>
       <div id="about"></div>
-      <div className="inline-flex flex-col bg-bg1 items-center px-10 py-8 mb-4 text-white text-xl lg:text-2xl font-mono rounded-[32px_0px_32px_0px] border-2 border-solid border-main1 text-shadow-custom">
+      <div className="inline-flex flex-col bg-bg1 items-center px-6 py-5 md:px-10 md:py-8 text-white text-xl lg:text-2xl font-mono rounded-[32px_0px_32px_0px] border-2 border-solid border-main1 text-shadow-custom">
         Qui suis-je ?
       </div>
       <button
         onClick={handleToggle}
-        className="bg-bg1  px-4 py-2 rounded mt-4 border-2 border-solid border-black transition duration-300 ease-in-out transform hover:scale-105"
+        className="bg-bg1 text-sm md:text-base px-4 py-2  rounded-3xl mt-4 border-2 border-solid border-black transition duration-300 ease-in-out transform hover:scale-105"
       >
         {hasTime ? (
           <span className="flex items-center gap-2 text-yellowJs" >
@@ -51,7 +51,7 @@ const Contact = () => {
         )}
       </button>
       {hasTime ? (
-        <div className="havetime flex flex-col lg:flex-row items-center justify-center w-3/4 lg:w-2/3 gap-6 lg:gap-14 lg:flex-wrap pb-8 ">      
+        <div className="havetime flex flex-col lg:flex-row items-center justify-center w-3/4 lg:w-2/3 gap-3 md:gap-6 lg:gap-14 lg:flex-wrap pb-8 ">      
           <div className="bg-bg1 items-center p-9 gap-4 text-main1 text-xs md:text-sm lg:text-base font-mono rounded-[32px_0px_32px_0px] border-2 border-solid border-bg1 w-full h-auto lg:w-custom-500 lg:h-80">
             <p>
               Je suis une développeuse spécialisée en {" "}
@@ -102,7 +102,7 @@ const Contact = () => {
         </div>
       )}
       
-      <button onClick={() => smoothScroll('#project')} className="flex justify-center items-end mt-4">
+      <button onClick={() => smoothScroll('#project')} className="flex justify-center items-end ">
         <MouseDown mouseColor="#12F7D6" />
       </button>
       <div className="w-screen p-0">
@@ -128,4 +128,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default About;
