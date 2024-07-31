@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faReact, faJs, faCss3Alt, faHtml5, faSass, faNodeJs } from '@fortawesome/free-brands-svg-icons';
-import { faCogs, faFeatherAlt} from '@fortawesome/free-solid-svg-icons';
+import { faCogs, faFeatherAlt, faTrophy} from '@fortawesome/free-solid-svg-icons';
 import ProjectCard from "../components/ProjectCard";
 import { faCode } from "@fortawesome/free-solid-svg-icons";
 import MouseDown from "../components/MouseDown";
@@ -10,6 +10,7 @@ import projectsData from "../data/projects.json";
 import { smoothScroll } from '../helpers/smoothScroll';
 
 const technologyIcons = [
+  { name: "Best", icon: faTrophy},
   { name: "HTML5", icon: faHtml5 },
   { name: "CSS3", icon: faCss3Alt },
   { name: "Sass", icon: faSass },
@@ -22,7 +23,7 @@ const technologyIcons = [
 ];
 
 const ProjectPage = () => {
-  const [selectedTechnology, setSelectedTechnology] = useState("All");
+  const [selectedTechnology, setSelectedTechnology] = useState("Best");
 
   const handleFilterClick = (technology) => {
     setSelectedTechnology(technology);

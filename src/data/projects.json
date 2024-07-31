@@ -35,7 +35,7 @@
       "image": "/images/project4.png",
       "githubLink": "https://github.com/Typhub7/Front-End-Fisheye",
       "demoLink": "https://typhub7.github.io/Front-End-Fisheye/",
-      "technologies": ["HTML5", "CSS3", "JavaScript"],
+      "technologies": ["HTML5", "CSS3", "JavaScript", "Best"],
       "description" : "Objectif : Créer un site accessible pour une plateforme de photographes",
       "badgeText": "Accessibilité"
     },
@@ -45,7 +45,7 @@
       "image": "/images/project5.jpg",
       "githubLink": "https://github.com/Typhub7/Les-Petits-plats",
       "demoLink": "https://typhub7.github.io/Les-Petits-plats/",
-      "technologies": ["HTML5", "CSS3", "JavaScript"],
+      "technologies": ["HTML5", "CSS3", "JavaScript", "Best"],
       "description" : "Objectif : Développer un algorithme de recherche en JavaScript",
       "badgeText": "Green code"
     },
@@ -75,7 +75,7 @@
       "image": "/images/project8.png",
       "githubLink": "https://github.com/Typhub7/argentbank-front",
       "demoLink": "https://github.com/Typhub7/argentbank-front#installation",
-      "technologies": ["HTML5", "CSS3", "JavaScript","React","Tailwind","Redux"],
+      "technologies": ["HTML5", "CSS3", "JavaScript","React","Tailwind","Redux", "Best"],
       "description" : "Objectif : Utiliser une API pour un compte utilisateur bancaire avec React",
       "badgeText": "Api Rest - Swagger"
     }

@@ -10,20 +10,22 @@ import tailwindLogo from '../assets/tailwind.png';
 import strapi from '../assets/strapi.png';
 import jestLogo from '../assets/jest.png';
 import cypressLogo from '../assets/cypress.png';
+import figmaLogo from '../assets/figma.png';
 
 
 const skills = [
   { name: 'JavaScript', logo: javascriptLogo },
   { name: 'TypeScript', logo: typescriptLogo },
   { name: 'React', logo: reactLogo },
+  { name: 'Figma', logo: figmaLogo },
   { name: 'HTML', logo: htmlLogo },
   { name: 'CSS', logo: cssLogo },
-  { name: 'Sass', logo: sassLogo },
   { name: 'Tailwind', logo: tailwindLogo },
-  { name: 'Redux', logo: reduxLogo },
-  { name: 'Strapi', logo: strapi },
+  { name: 'Sass', logo: sassLogo },
   { name: 'Jest', logo: jestLogo },
   { name: 'Cypress', logo: cypressLogo },
+  { name: 'Redux', logo: reduxLogo },
+  { name: 'Strapi', logo: strapi },
 ];
 
 const Skills = () => {

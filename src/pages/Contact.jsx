@@ -89,7 +89,7 @@ export const Contact = () => {
     <div className="flex flex-col gap-6 w-full p-2">
       <label className="text-main1 text-base lg:text-2xl font-mono" htmlFor="message">Votre message :</label>
       <textarea
-        className="text-white bg-bg1 md:bg-transparent border- mg:border-0  rounded-md p-2 w-full"
+        className="text-white bg-bg1 md:bg-transparent border- mg:border-0  rounded-md p-2 w-full resize-none"
         placeholder="Saisissez votre message"
         id="message"
         value={formData.message}

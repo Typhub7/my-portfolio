@@ -112,7 +112,7 @@ const SunburstChart = ({ data }) => {
       .style("cursor", "pointer")
       .on("click", clicked);
 
-    const format = d3.format(",d");
+    
     path.append("title")
       .text(d => d.data.name);
 

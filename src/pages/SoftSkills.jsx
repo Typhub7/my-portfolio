@@ -30,7 +30,6 @@ const data = {
       children: [
         { name: "Documentation technique", value: 1 },
         { name: "Travail en équipe", value: 1 },
-        { name: "Perspective Technicien et Client", value: 1 },
         { name: "Qualité", value: 1 },
       ]
     },
@@ -40,7 +39,7 @@ const data = {
         { name: "Autonomie", value: 1 },
         { name: "Gestion du temps", value: 1 },
         { name: "Esprit critique", value: 1 },
-        { name: "Méthode Agile", value: 1 },
+        { name: "Agile Scrum", value: 1 },
       ]
     }
     ,
