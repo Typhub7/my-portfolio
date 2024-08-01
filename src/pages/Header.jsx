@@ -2,10 +2,15 @@ import React from "react";
 import Github from '../components/Github';
 import LinkedIn from '../components/LinkedIn'; 
 import TypedText from '../components/TypedText';
+import { useLanguage } from '../context/LanguageContext';
+import franceFlag from '../assets/france-flag.png';
+import ukFlag from '../assets/uk-flag.png';
 
 export const Header = () => {
-  const phrase1 = "Bonjour, je suis Caroline Drevon, développeuse Front-end.";
-  const phrase2 = "Bienvenue sur mon portfolio !";
+  const { language, toggleLanguage } = useLanguage();
+
+  const phrase1 = language === 'fr' ? "Bonjour, je suis Caroline Drevon, développeuse Front-end." : "Hello, I am Caroline Drevon, Front-end Developer.";
+  const phrase2 = language === 'fr' ? "Bienvenue sur mon portfolio !" : "Welcome to my portfolio!";
 
   return (
     <div id="menu" className="bg-bg1 flex flex-col items-center px-12 sm:px-16 md:px-32 py-0 relative bg-bg-1 overflow-hidden">
@@ -17,12 +22,17 @@ export const Header = () => {
           </div>
         </div>
         <div className="inline-flex items-center gap-16">
-            <div className="inline-flex items-center gap-2">
-              <LinkedIn color="#12F7D6" />
-            </div>
-            <div className="inline-flex items-center gap-2">
-              <Github color="#12F7D6" />
-            </div>
+          <div className="inline-flex items-center gap-2">
+            <LinkedIn color="#12F7D6" />
+          </div>
+          <div className="inline-flex items-center gap-2">
+            <Github color="#12F7D6" />
+          </div>
+          <div className="inline-flex items-center gap-2">
+            <button onClick={() => toggleLanguage()}>
+              <img src={language === 'fr' ? ukFlag : franceFlag } alt="Toggle Language" width="30" />
+            </button>
+          </div>
         </div>
       </div>
       <div className="w-screen">

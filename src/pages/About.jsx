@@ -3,13 +3,67 @@ import MouseDown from "../components/MouseDown";
 import { smoothScroll } from '../helpers/smoothScroll';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronRight, faChevronLeft } from '@fortawesome/free-solid-svg-icons';
+import { useLanguage } from '../context/LanguageContext';
+import classNames from 'classnames';
 
 const About = () => {
+  const { language } = useLanguage();
   const [hasTime, setHasTime] = useState(true);
+
+  const translations = {
+    en: {
+      about: "Who am I?",
+      toggleTextShort: "I don't have time to read",
+      toggleTextLong: "I want to know more",
+      intro: <>I am a developer specializing in <span className="text-yellowJs">JavaScript</span> and <span className="text-yellowJs">React</span>, passionate about creating modern and interactive web applications.</>,
+      bio1: <>I started my career as a <span className="text-yellowJs">biomedical engineer</span> in the nuclear industry with a master's degree in biomedical engineering and a DUT in electrical and industrial computer engineering. I chose to make a <span className="text-yellowJs">career change</span> through a 14-month training with Openclassroom.</>,
+      transition: <>My transition to software development was guided by my constant desire to improve and take on new challenges. I am <span className="text-yellowJs">optimistic</span>, <span className="text-yellowJs">perfectionist</span>, and I love continuous learning.</>,
+      skills: <>My journey has instilled in me <span className="text-yellowJs">scientific rigor</span> and an ability to solve complex problems, skills I now apply in development and testing.</>,
+      hobbies: <>Outside of coding, I find a precious balance spending time with my husband and children. I also nurture a passion for archaeology and metal detecting, interests that reflect my <span className="text-yellowJs">curiosity</span> and <span className="text-yellowJs">perseverance</span>.</>,
+      childhood: <>My journey into computing began in childhood with BASIC on an Amstrad 6128, an experience that sowed the seeds of <span className="text-yellowJs">my passion for technology</span>.</>,
+      jobSearch: <>Currently looking for full-time or part-time employment, remote work, as a <span className="text-yellowJs">Front-End developer</span> or <span className="text-yellowJs">QA tester</span>.</>,
+      ready: "I am also ready to take on additional training through an apprenticeship or Poec.",
+      recognition: "I have a recognized worker status for a physical disability.",
+      short1: <>JavaScript and React developer, <span className="text-yellowJs">passionate</span> about modern web applications.</>,
+      short2: <>Former <span className="text-yellowJs">biomedical engineer</span>, 14-month career change via Openclassroom.</>,
+      short3: <>I love <span className="text-yellowJs">challenges</span>, continuous learning, and <span className="text-yellowJs">scientific rigor.</span></>,
+      short4: <>Spending time with <span className="text-yellowJs">my family</span>, passionate about metal detecting.</>,
+      short5: <><span className="text-yellowJs">Looking for a job</span> as a Front-End developer or QA tester, recognized as a disabled worker.</>     
+    },
+    fr: {
+      about: "Qui suis-je ?",
+      toggleTextShort: "Je n'ai pas le temps de lire",
+      toggleTextLong: "Je veux en savoir plus",
+      intro: <>Je suis une développeuse spécialisée en <span className="text-yellowJs">JavaScript</span> et <span className="text-yellowJs">React</span>, passionnée par la création d'applications web modernes et interactives.</>,
+      bio1: <>J'ai débuté ma carrière en tant qu'<span className="text-yellowJs">ingénieure biomédicale</span> dans le nucléaire avec une maîtrise en génie biomédical et un DUT en génie électrique et informatique industrielle. J'ai choisi de faire une <span className="text-yellowJs">reconversion professionnelle</span> via une formation de 14 mois avec Openclassroom.</>,
+      transition: <>Ma transition vers le développement informatique a été guidée par ma constante volonté de m'améliorer et de relever de nouveaux défis. Je suis <span className="text-yellowJs">optimiste</span>, <span className="text-yellowJs">perfectionniste</span> et j'aime apprendre continuellement.</>,
+      skills: <>Mon parcours m'a inculqué une <span className="text-yellowJs">rigueur scientifique</span> et une capacité à résoudre des problèmes complexes, des compétences que j'applique désormais dans le développement et le test.</>,
+      hobbies: <>En dehors du code, je trouve un équilibre précieux en passant du temps avec mon mari et mes enfants. Je nourris également une passion pour l'archéologie et la détection de métaux, des intérêts qui reflètent ma <span className="text-yellowJs">curiosité</span> et ma <span className="text-yellowJs">persévérance</span>.</>,
+      childhood: <>Mon voyage dans l'informatique a débuté dès l'enfance avec du BASIC sur un Amstrad 6128, une expérience qui a semé les graines de <span className="text-yellowJs">ma passion pour la technologie</span>.</>,
+      jobSearch: <>Actuellement à la recherche d'un emploi à temps plein ou partiel, en travail à distance, comme <span className="text-yellowJs">développeuse Front-End</span> ou <span className="text-yellowJs">testeuse QA</span>.</>,
+      ready: "Je suis aussi prête à effectuer des formations complémentaires en alternance ou Poec.",
+      recognition: "Je bénéficie d'une reconnaissance de travailleur handicapé pour un handicap physique.",
+      short1: <>Développeuse JavaScript et React, <span className="text-yellowJs">passionnée</span> par les applications web modernes.</>,
+      short2: <>Ancienne<span className="text-yellowJs"> ingénieure biomédicale</span>, reconversion de 14 mois via Openclassroom.</>,
+      short3: <>J'aime les <span className="text-yellowJs">défis</span>, l'apprentissage continu, et la <span className="text-yellowJs">rigueur scientifique.</span></>,
+      short4: <>Passer du temps avec <span className="text-yellowJs">ma famille</span>, passionnée de detection de métaux. </>,
+      short5: <><span className="text-yellowJs">En recherche emploi</span> développeuse Front-End ou testeuse QA, reconnue travailleuse handicapée. </>
+    }
+  };
+  
+  const t = translations[language];
 
   const handleToggle = () => {
     setHasTime(!hasTime);
   };
+
+  const classes = classNames(
+    "bg-bg1 items-center p-9 gap-4 text-main1 text-xs md:text-sm lg:text-base font-mono rounded-[32px_0px_32px_0px] border-2 border-solid border-bg1 w-full h-auto lg:w-custom-500",
+    {
+      "lg:h-80": language === "fr",
+      "lg:h-72": language === "en",
+    }
+  );
 
   return (
     <div className="flex flex-col items-center p-0 gap-8 bg-bg2 bg-custom-bg bg-center-50 bg-cover bg-no-repeat">
@@ -34,7 +88,7 @@ const About = () => {
       </div>
       <div id="about"></div>
       <div className="inline-flex flex-col bg-bg1 items-center px-6 py-5 md:px-10 md:py-8 text-white text-xl lg:text-2xl font-mono rounded-[32px_0px_32px_0px] border-2 border-solid border-main1 text-shadow-custom">
-        Qui suis-je ?
+        {t.about}
       </div>
       <button
         onClick={handleToggle}
@@ -43,62 +97,40 @@ const About = () => {
         {hasTime ? (
           <span className="flex items-center gap-2 text-yellowJs" >
             <FontAwesomeIcon icon={faChevronRight} />
-            <span >Je n'ai pas le temps de lire</span>
+            <span >{t.toggleTextShort}</span>
             <FontAwesomeIcon icon={faChevronLeft} />
           </span>
         ) : (
-          <span className="text-main1">Je veux en savoir plus</span>
+          <span className="text-main1">{t.toggleTextLong}</span>
         )}
       </button>
       {hasTime ? (
         <div className="havetime flex flex-col lg:flex-row items-center justify-center w-3/4 lg:w-2/3 gap-3 md:gap-6 lg:gap-14 lg:flex-wrap pb-8 ">      
-          <div className="bg-bg1 items-center p-9 gap-4 text-main1 text-xs md:text-sm lg:text-base font-mono rounded-[32px_0px_32px_0px] border-2 border-solid border-bg1 w-full h-auto lg:w-custom-500 lg:h-80">
-            <p>
-              Je suis une développeuse spécialisée en {" "}
-              <span className="text-yellowJs">JavaScript</span> et{" "}
-              <span className="text-yellowJs">React</span>, passionnée par la création d'applications web modernes et interactives.
-            </p>
-            <p>
-              J'ai débuté ma carrière en tant qu'<span className="text-yellowJs">ingénieure biomédicale</span> dans le nucléaire avec une maîtrise en génie biomédical et un DUT en génie électrique et informatique industrielle. J'ai choisie de faire une <span className="text-yellowJs">reconversion professionnelle</span> via une formation de 14 mois avec Openclassroom.
-            </p>
+          <div className={classes}>
+            <p>{t.intro}</p>
+            <p>{t.bio1}</p>
           </div>
-          <div className="flex flex-col bg-bg1 items-center p-9 gap-4 text-main1 text-xs md:text-sm lg:text-base font-mono rounded-[32px_0px_32px_0px] border-2 border-solid border-bg1 w-full h-auto lg:w-custom-500 lg:h-80 ">
-            <p>
-              Ma transition vers le développement informatique a été guidée par ma constante volonté de m'améliorer et de relever de nouveaux défis. Je suis {" "}
-              <span className="text-yellowJs">optimiste</span>, {" "}
-              <span className="text-yellowJs">perfectionniste</span> et j'aime apprendre continuellement.
-            </p>
-            <p>
-              Mon parcours m'a inculqué une <span className="text-yellowJs">rigueur scientifique</span> et une capacité à résoudre des problèmes complexes, des compétences que j'applique désormais dans le développement et le test.
-            </p>
+          <div className={classes}>
+            <p>{t.transition}</p>
+            <p>{t.skills}</p>
           </div>
-          <div className="flex flex-col bg-bg1 items-center p-9 gap-4 text-main1 text-xs md:text-sm lg:text-base font-mono rounded-[32px_0px_32px_0px] border-2 border-solid border-bg1 w-full h-auto lg:w-custom-500 lg:h-80">
-            <p>
-              En dehors du code, je trouve un équilibre précieux en passant du temps avec mon mari et mes enfants. Je nourris également une passion pour l'archéologie et la détection de métaux, des intérêts qui reflètent ma <span className="text-yellowJs">curiosité</span> et ma <span className="text-yellowJs">persévérance</span>.
-            </p>
-            <p>
-              Mon voyage dans l'informatique a débuté dès l'enfance avec du BASIC sur un Amstrad 6128, une expérience qui a semé les graines de <span className="text-yellowJs">ma passion pour la technologie.</span>
-            </p>
+          <div className={classes}>
+            <p>{t.hobbies}</p>
+            <p>{t.childhood}</p>
           </div>
-          <div className="flex flex-col bg-bg1 items-center p-9 gap-4 text-main1 text-xs md:text-sm lg:text-base  font-mono rounded-[32px_0px_32px_0px] border-2 border-solid border-bg1 w-full h-auto lg:w-custom-500 lg:h-80">
-            <p>
-              Actuellement à la <span className="text-yellowJs">recherche d'un emploi</span> à temps plein ou partiel, en travail à distance, comme <span className="text-yellowJs">développeuse Front-End ou testeuse QA.</span>
-            </p>
-            <p>
-              Je suis aussi prête à effectuer des formations complémentaires en alternance ou Poec.
-            </p>
-            <p>
-              Je bénéficie d'une reconnaissance de travailleur handicapé pour un handicap physique.
-            </p>
+          <div className={classes}>
+            <p>{t.jobSearch}</p>
+            <p>{t.ready}</p>
+            <p>{t.recognition}</p>
           </div>
         </div>
       ) : (
         <div className="notime bg-bg1 items-center p-9 text-main1 text-xs md:text-sm lg:text-base font-mono rounded-[32px_0px_32px_0px] border-2 border-solid border-bg1  h-auto w-2/3 lg:w-auto">
-          <p className="py-2">Développeuse JavaScript et React, <span className="text-yellowJs">passionnée</span> par les applications web modernes.</p>
-          <p className="py-2">Ancienne<span className="text-yellowJs"> ingénieure biomédicale</span>, reconversion de 14 mois via Openclassroom.</p>
-          <p className="py-2">J'aime les <span className="text-yellowJs">défis</span>, l'apprentissage continu, et la <span className="text-yellowJs">rigueur scientifique.</span></p>
-          <p className="py-2">Passer du temps avec <span className="text-yellowJs">ma famille</span>, passionnée de detection de métaux.</p>
-          <p className="py-2"><span className="text-yellowJs">En recherche emploi</span> développeuse Front-End ou testeuse QA, reconnue travailleuse handicapée. </p>
+          <p className="py-2">{t.short1}</p>
+          <p className="py-2">{t.short2}</p>
+          <p className="py-2">{t.short3}</p>
+          <p className="py-2">{t.short4}</p>
+          <p className="py-2">{t.short5}</p>
         </div>
       )}
       

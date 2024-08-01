@@ -3,10 +3,14 @@ import MouseDown from "../components/MouseDown";
 import { smoothScroll } from '../helpers/smoothScroll';
 import LineWithDots from "../helpers/lineWithDots";
 import SunburstChart from '../components/SunburstChart';
-import data from '../data/softSkillsData.json';
+import dataFr from '../data/softSkillsData.json';
+import dataEn from '../data/softSkillsData_en.json';
+import { useLanguage } from '../context/LanguageContext';
 import "./SoftSkills.css"
 
 const SoftSkills = () => {
+  const { language } = useLanguage();
+  const data = language === 'en' ? dataEn : dataFr;
   return (
     <section className="bg-code-bg">
       <b className="hr anim"></b>

@@ -7,10 +7,11 @@ import ProjectPage from './pages/Project';
 import SoftSkills from './pages/SoftSkills';
 import Contact from './pages/Contact';
 import Footer from './pages/Footer';
+import { LanguageProvider } from './context/LanguageContext';
 
 function App() {
   return (
-    <div>
+    <LanguageProvider>
       <FloatingMenu />
       <Header />
       <HowAmIPage />
@@ -19,8 +20,7 @@ function App() {
       <SoftSkills />
       <Contact />
       <Footer />
-      
-    </div>
+    </LanguageProvider>
   );
 }
 

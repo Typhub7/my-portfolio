@@ -1,7 +1,9 @@
 import React, { useRef, useEffect } from 'react';
 import * as d3 from 'd3';
+import { useLanguage } from '../context/LanguageContext';
 
 const SunburstChart = ({ data }) => {
+  const { language } = useLanguage();
   const svgRef = useRef();
 
   useEffect(() => {
@@ -54,6 +56,7 @@ const SunburstChart = ({ data }) => {
     const svg = d3.select(svgRef.current)
       .attr("viewBox", [-width / 2, -width / 2, width, width])
       .style("font-size", "10px")
+      .style("font-weight", "bold")
       .style("fill", "#1f1f1f")
       .style("font-family", "Arial, sans-serif");
 
@@ -144,7 +147,8 @@ const SunburstChart = ({ data }) => {
       .on("click", clicked);
 
     // Add central text
-    svg.append("text")
+    if (language === "fr") {
+      svg.append("text")
       .attr("x", 0)
       .attr("y", -20)
       .attr("text-anchor", "middle")
@@ -173,6 +177,38 @@ const SunburstChart = ({ data }) => {
       .style("font-weight", "bold")
       .text("& Testeur QA")
       .attr("pointer-events", "none");
+    } else {
+      svg.append("text")
+      .attr("x", 0)
+      .attr("y", -20)
+      .attr("text-anchor", "middle")
+      .attr("alignment-baseline", "middle")
+      .style("font-size", "16px")
+      .style("font-weight", "bold")
+      .text("JS React ")
+      .attr("pointer-events", "none");
+
+    svg.append("text")
+      .attr("x", 0)
+      .attr("y", 0)
+      .attr("text-anchor", "middle")
+      .attr("alignment-baseline", "middle")
+      .style("font-size", "16px")
+      .style("font-weight", "bold")
+      .text(" Developper")
+      .attr("pointer-events", "none");
+
+    svg.append("text")
+      .attr("x", 0)
+      .attr("y", 20)
+      .attr("text-anchor", "middle")
+      .attr("alignment-baseline", "middle")
+      .style("font-size", "16px")
+      .style("font-weight", "bold")
+      .text("& QA Tester")
+      .attr("pointer-events", "none");
+    }
+    
 
     function clicked(event, p) {
       parent.datum(p.parent || root);

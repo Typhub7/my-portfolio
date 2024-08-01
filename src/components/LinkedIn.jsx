@@ -1,8 +1,12 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { useLanguage } from '../context/LanguageContext';
 
 const LinkedIn = ({ color = 'black' }) => {
+  const { language } = useLanguage();
+  const label = language === 'fr' ? 'Mon LinkedIn' : 'My LinkedIn';
+
   return (
     <a
       href="https://www.linkedin.com/in/ton-profil/"
@@ -12,7 +16,7 @@ const LinkedIn = ({ color = 'black' }) => {
       style={{ color: color }}
     >
       <FontAwesomeIcon icon={faLinkedin} />
-      <span>Mon LinkedIn</span>
+      <span>{label}</span>
     </a>
   );
 };

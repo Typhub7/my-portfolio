@@ -1,8 +1,12 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { useLanguage } from '../context/LanguageContext';
 
 const Github = ({ color = 'black' }) => {
+  const { language } = useLanguage();
+  const label = language === 'fr' ? 'Mon Github' : 'My Github';
+
   return (
     <a
       href="https://github.com/Typhub7/"
@@ -12,7 +16,7 @@ const Github = ({ color = 'black' }) => {
       style={{ color: color }}
     >
       <FontAwesomeIcon icon={faGithub} />
-      <span>Mon Github</span>
+      <span>{label}</span>
     </a>
   );
 };

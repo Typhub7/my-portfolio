@@ -1,5 +1,5 @@
 export const validateName = (name) => {
-  const nameRegex = /^[a-zA-Z\s]{1,100}$/; // Only allows letters and spaces, 1 to 100 characters
+  const nameRegex = /^[a-zA-Z\s]{1,50}$/; // Only allows letters and spaces, 1 to 50 characters
   return nameRegex.test(name);
 };
 

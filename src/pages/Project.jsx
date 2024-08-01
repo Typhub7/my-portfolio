@@ -6,8 +6,10 @@ import ProjectCard from "../components/ProjectCard";
 import { faCode } from "@fortawesome/free-solid-svg-icons";
 import MouseDown from "../components/MouseDown";
 import LineWithDots from "../helpers/lineWithDots";
-import projectsData from "../data/projects.json";
+import DataFR from "../data/projectsData.json";
+import DataEn from "../data/projectsData_en.json";
 import { smoothScroll } from '../helpers/smoothScroll';
+import { useLanguage } from '../context/LanguageContext';
 
 const technologyIcons = [
   { name: "Best", icon: faTrophy},
@@ -23,6 +25,10 @@ const technologyIcons = [
 ];
 
 const ProjectPage = () => {
+  const { language } = useLanguage();
+  const projectsData = language === 'fr' ? DataFR : DataEn;
+  const titleLabel = language === 'fr' ? 'Projets' : 'Projects';
+
   const [selectedTechnology, setSelectedTechnology] = useState("Best");
 
   const handleFilterClick = (technology) => {
@@ -33,7 +39,7 @@ const ProjectPage = () => {
     <div className="bg-bg1 px-4 py-4 lg:py-8">
       <div className="flex flex-col justify-center items-center">
         <div id="project"></div>
-        <h2 className="text-main1 font-sans text-2xl md:text-4xl lg:text-6xl my-2 lg:my-6 text-shadow-custom">Projets</h2>
+        <h2 className="text-main1 font-sans text-2xl md:text-4xl lg:text-6xl my-2 lg:my-6 text-shadow-custom">{titleLabel}</h2>
         <LineWithDots />
       </div>
       

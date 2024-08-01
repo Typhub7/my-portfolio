@@ -1,6 +1,10 @@
 import React from "react";
+import { useLanguage } from '../context/LanguageContext';
 
 const ProjectCard = ({ title, image, githubLink, demoLink, description,badgeText  }) => {
+  const { language } = useLanguage();
+  const demonstration = language === 'fr' ? 'Démo' : 'Demo';
+
   return (
     <div className="relative bg-white shadow-md rounded-lg overflow-hidden h-48 sm:h-60 lg:h-80"> {/* Ajustez la hauteur ici si nécessaire */}
       {/* Image en arrière-plan */}
@@ -27,7 +31,7 @@ const ProjectCard = ({ title, image, githubLink, demoLink, description,badgeText
             GitHub
           </a>
           <a href={demoLink} target="_blank" rel="noopener noreferrer" className="bg-main1 text-black px-4 py-2 rounded-md hover:bg-bg1 hover:text-main1 shadow-3d z-50">
-            Démo
+            {demonstration}
           </a>
         </div>
       </div>
