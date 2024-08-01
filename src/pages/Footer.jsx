@@ -4,8 +4,8 @@ import LinkedIn from '../components/LinkedIn';
 
 export const Footer = () => {
   return (
-    <footer className="bg-bg1 flex flex-col items-center px-10 lg:px-32 py-8 relative bg-bg-1 overflow-hidden mt-1">
-      <div className="flex items-center justify-between w-full">
+    <footer className="bg-bg1 flex flex-col items-center px-10 lg:px-32 py-8 relative overflow-hidden">
+      <div className="flex flex-col md:flex-row gap-2 md:gap-0 items-center justify-between w-full">
         <div className="text-white">
           &copy; 2024 Caroline Drevon. Tous droits réservés.
         </div>

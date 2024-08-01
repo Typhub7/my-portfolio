@@ -1,0 +1,56 @@
+{
+    "name": "Javascript Developer",
+    "children": [
+      {
+        "name": "Family and Children",
+        "children": [
+          { "name": "Organization", "value": 1 },
+          { "name": "Multitasking", "value": 1 },
+          { "name": "Stress Management", "value": 1 }
+        ]
+      },
+      {
+        "name": "Biomedical Engineer",
+        "children": [
+          { "name": "Rigor", "value": 1 },
+          { "name": "Analysis", "value": 1 },
+          { "name": "Problem Solving", "value": 1 },
+          { "name": "Kaizen 5S and Kanban", "value": 1 }
+        ]
+      },
+      {
+        "name": "R&D Assistance",
+        "children": [
+          { "name": "Technical Documentation", "value": 1 },
+          { "name": "Teamwork", "value": 1 },
+          { "name": "Quality", "value": 1 }
+        ]
+      },
+      {
+        "name": "OpenClassroom Training",
+        "children": [
+          { "name": "Autonomy", "value": 1 },
+          { "name": "Time Management", "value": 1 },
+          { "name": "Critical Thinking", "value": 1 },
+          { "name": "Agile Scrum", "value": 1 }
+        ]
+      },
+      {
+        "name": "Electronic Technician",
+        "children": [
+          { "name": "Precision", "value": 1 },
+          { "name": "Patience", "value": 1 },
+          { "name": "Resilience", "value": 1 }
+        ]
+      },
+      {
+        "name": "Veterinary Assistant",
+        "children": [
+          { "name": "Empathy", "value": 1 },
+          { "name": "Communication", "value": 1 },
+          { "name": "Adaptability", "value": 1 },
+          { "name": "Diplomacy", "value": 1 }
+        ]
+      }
+    ]
+  }

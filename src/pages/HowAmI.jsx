@@ -16,7 +16,7 @@ const HowAmIPage = () => {
           <div className="bg-bg2 shadow-md shadow-main1 rounded-custom2 border-white w-64 lg:w-96 h-72 lg:h-custom-h flex justify-center items-center">
             <Contact />
           </div>
-          <div className="bg-white shadow-md rounded-3xl p-4">
+          <div >
             <WelcomeAnimation />
           </div>
           <div className="bg-bg2 shadow-3d shadow-white rounded-custom2 p-4 w-64 sm:w-80 lg:w-96">

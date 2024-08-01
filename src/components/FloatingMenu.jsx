@@ -6,11 +6,11 @@ import { Tooltip } from 'react-tooltip';
 
 const FloatingMenu = () => {
   return (
-    <div className="fixed top-1/4 left-2 flex flex-col items-center bg-white bg-opacity-80 rounded-3xl shadow-lg p-2 lg:p-4 z-50">
+    <div className="fixed top-1/4 left-2 flex flex-col items-center  md:bg-white bg-opacity-100 md:bg-opacity-80 border-2 md:border-0 rounded-3xl shadow-lg p-2 lg:p-4 z-50">
       <button
         data-testid="menu-button"
         onClick={() => smoothScroll('#menu')}
-        className="my-2 text-gray-800 hover:text-blue-500 text-sm lg:text-2xl"
+        className="my-2 text-white md:text-gray-800 hover:text-blue-500 text-sm lg:text-2xl"
         data-tooltip-id="menu-tooltip"
         data-tooltip-content="Retour en haut"
       >
@@ -19,7 +19,7 @@ const FloatingMenu = () => {
       <button
         data-testid="howami-button"
         onClick={() => smoothScroll('#howamI')}
-        className="my-2 text-gray-800 hover:text-blue-500 text-sm lg:text-2xl"
+        className="my-2 text-white md:text-gray-800 hover:text-blue-500 text-sm lg:text-2xl"
         data-tooltip-id="howami-tooltip"
         data-tooltip-content="Qui suis-je ?"
       >
@@ -28,7 +28,7 @@ const FloatingMenu = () => {
       <button
         data-testid="about-button"
         onClick={() => smoothScroll('#about')}
-        className="my-2 text-gray-800 hover:text-blue-500 text-sm lg:text-2xl"
+        className="my-2 text-white md:text-gray-800 hover:text-blue-500 text-sm lg:text-2xl"
         data-tooltip-id="about-tooltip"
         data-tooltip-content="En savoir plus sur moi"
       >
@@ -37,7 +37,7 @@ const FloatingMenu = () => {
       <button
         data-testid="project-button"
         onClick={() => smoothScroll('#project')}
-        className="my-2 text-gray-800 hover:text-blue-500 text-sm lg:text-2xl"
+        className="my-2 text-white md:text-gray-800 hover:text-blue-500 text-sm lg:text-2xl"
         data-tooltip-id="project-tooltip"
         data-tooltip-content="Mes Projects"
       >
@@ -46,7 +46,7 @@ const FloatingMenu = () => {
       <button
         data-testid="softskills-button"
         onClick={() => smoothScroll('#softskills')}
-        className="my-2 text-gray-800 hover:text-blue-500 text-sm lg:text-2xl"
+        className="my-2 text-white md:text-gray-800 hover:text-blue-500 text-sm lg:text-2xl"
         data-tooltip-id="softskills-tooltip"
         data-tooltip-content="Mes Soft Skills"
       >
@@ -55,7 +55,7 @@ const FloatingMenu = () => {
       <button
         data-testid="contact-button"
         onClick={() => smoothScroll('#contact')}
-        className="my-2 text-gray-800 hover:text-blue-500 text-sm lg:text-2xl"
+        className="my-2 text-white md:text-gray-800 hover:text-blue-500 text-sm lg:text-2xl"
         data-tooltip-id="contact-tooltip"
         data-tooltip-content="Me Contacter"
       >

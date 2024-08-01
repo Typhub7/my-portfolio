@@ -5,7 +5,7 @@ const SunburstChart = ({ data }) => {
   const svgRef = useRef();
 
   useEffect(() => {
-    const width = 600;
+    const width = 500;
     const radius = width / 6;
     const maxLabelWidth = radius * 0.9; // Adjust based on your needs
 
@@ -54,7 +54,6 @@ const SunburstChart = ({ data }) => {
     const svg = d3.select(svgRef.current)
       .attr("viewBox", [-width / 2, -width / 2, width, width])
       .style("font-size", "10px")
-      .style("font-weight", "bold")
       .style("fill", "#1f1f1f")
       .style("font-family", "Arial, sans-serif");
 
