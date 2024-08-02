@@ -19,7 +19,7 @@ const SoftSkills = () => {
           <h2 className="text-main1 font-sans text-2xl md:text-4xl lg:text-6xl my-4 text-shadow-custom">SoftSkills</h2>
         </div>
         <LineWithDots />
-        <div className="shadow-md rounded-full w-11/12 lg:w-2/3 xl:w-1/2">
+        <div className="shadow-md rounded-full w-11/12 lg:w-2/3 xl:w-1/2 max-w-4xl">
             <SunburstChart data={data} />
         </div>
       </div>

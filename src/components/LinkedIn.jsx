@@ -9,7 +9,7 @@ const LinkedIn = ({ color = 'black' }) => {
 
   return (
     <a
-      href="https://www.linkedin.com/in/ton-profil/"
+      href="https://www.linkedin.com/in/drevon-caroline/"
       target="_blank"
       rel="noopener noreferrer"
       className="flex items-center space-x-2 text-xs mg:text-sm lg:text-base xl:text-lg  hover:underline"

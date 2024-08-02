@@ -11,7 +11,7 @@ import strapi from '../assets/strapi.png';
 import jestLogo from '../assets/jest.png';
 import cypressLogo from '../assets/cypress.png';
 import figmaLogo from '../assets/figma.png';
-
+import { useLanguage } from '../context/LanguageContext';
 
 const skills = [
   { name: 'JavaScript', logo: javascriptLogo },
@@ -29,9 +29,11 @@ const skills = [
 ];
 
 const Skills = () => {
+  const { language } = useLanguage();
+  const title = language === 'fr' ? 'Compétences' : 'Skills';
   return (
     <div>
-      <h2 className=" text-main1 text-base lg:text-2xl font-bold mt-0 mb-2 lg:my-6 text-center">Compétences</h2>
+      <h2 className=" text-main1 text-base lg:text-2xl font-bold mt-0 mb-2 lg:my-6 text-center">{title}</h2>
       <div className="grid grid-cols-4 gap-3 sm:gap-4">
         {skills.map((skill, index) => (
           <div key={index} className="flex flex-col items-center my-2">

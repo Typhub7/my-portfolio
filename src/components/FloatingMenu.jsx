@@ -3,8 +3,17 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faUser, faInfoCircle, faProjectDiagram, faEnvelope, faBrain } from '@fortawesome/free-solid-svg-icons';
 import { smoothScroll } from '../helpers/smoothScroll';
 import { Tooltip } from 'react-tooltip';
+import { useLanguage } from '../context/LanguageContext';
 
 const FloatingMenu = () => {
+  const { language } = useLanguage();
+  const backToTop = language === 'fr' ? 'Retour en haut' : 'Back to top';
+  const whoAmI = language === 'fr' ? 'Qui suis-je ?' : 'Who am I ?';
+  const moreAbout = language === 'fr' ? 'En savoir plus sur moi' : 'About me';
+  const myProjects = language === 'fr' ? 'Mes projets' : 'My projects';
+  const mySoftskills = language === 'fr' ? 'Mes soft-skills' : 'My soft-skills';
+  const contactMe = language === 'fr' ? 'Contactez-moi' : 'Contact me';
+
   return (
     <div className="fixed top-1/4 left-2 flex flex-col items-center  md:bg-white bg-opacity-100 md:bg-opacity-80 border-2 md:border-0 rounded-3xl shadow-lg p-2 lg:p-4 z-50">
       <button
@@ -12,7 +21,7 @@ const FloatingMenu = () => {
         onClick={() => smoothScroll('#menu')}
         className="my-2 text-white md:text-gray-800 hover:text-blue-500 text-sm lg:text-2xl"
         data-tooltip-id="menu-tooltip"
-        data-tooltip-content="Retour en haut"
+        data-tooltip-content={backToTop}
       >
         <FontAwesomeIcon icon={faBars} />
       </button>
@@ -21,7 +30,7 @@ const FloatingMenu = () => {
         onClick={() => smoothScroll('#howamI')}
         className="my-2 text-white md:text-gray-800 hover:text-blue-500 text-sm lg:text-2xl"
         data-tooltip-id="howami-tooltip"
-        data-tooltip-content="Qui suis-je ?"
+        data-tooltip-content={whoAmI}
       >
         <FontAwesomeIcon icon={faUser} />
       </button>
@@ -30,7 +39,7 @@ const FloatingMenu = () => {
         onClick={() => smoothScroll('#about')}
         className="my-2 text-white md:text-gray-800 hover:text-blue-500 text-sm lg:text-2xl"
         data-tooltip-id="about-tooltip"
-        data-tooltip-content="En savoir plus sur moi"
+        data-tooltip-content={moreAbout}
       >
         <FontAwesomeIcon icon={faInfoCircle} />
       </button>
@@ -39,7 +48,7 @@ const FloatingMenu = () => {
         onClick={() => smoothScroll('#project')}
         className="my-2 text-white md:text-gray-800 hover:text-blue-500 text-sm lg:text-2xl"
         data-tooltip-id="project-tooltip"
-        data-tooltip-content="Mes Projects"
+        data-tooltip-content={myProjects}
       >
         <FontAwesomeIcon icon={faProjectDiagram} />
       </button>
@@ -48,7 +57,7 @@ const FloatingMenu = () => {
         onClick={() => smoothScroll('#softskills')}
         className="my-2 text-white md:text-gray-800 hover:text-blue-500 text-sm lg:text-2xl"
         data-tooltip-id="softskills-tooltip"
-        data-tooltip-content="Mes Soft Skills"
+        data-tooltip-content={mySoftskills}
       >
         <FontAwesomeIcon icon={faBrain} />
       </button>
@@ -57,7 +66,7 @@ const FloatingMenu = () => {
         onClick={() => smoothScroll('#contact')}
         className="my-2 text-white md:text-gray-800 hover:text-blue-500 text-sm lg:text-2xl"
         data-tooltip-id="contact-tooltip"
-        data-tooltip-content="Me Contacter"
+        data-tooltip-content={contactMe}
       >
         <FontAwesomeIcon icon={faEnvelope} />
       </button>
