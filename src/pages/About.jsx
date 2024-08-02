@@ -1,11 +1,6 @@
 import React, { useState } from "react";
 import MouseDown from "../components/MouseDown";
 import { smoothScroll } from "../helpers/smoothScroll";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faChevronRight,
-  faChevronLeft,
-} from "@fortawesome/free-solid-svg-icons";
 import { useLanguage } from "../context/LanguageContext";
 import classNames from "classnames";
 
@@ -254,21 +249,20 @@ const About = () => {
       <div className="inline-flex flex-col bg-bg1 items-center px-6 py-5 md:px-10 md:py-8 text-white text-xl lg:text-2xl font-mono rounded-[32px_0px_32px_0px] border-2 border-solid border-main1 text-shadow-custom">
         {t.about}
       </div>
-      <button
-        onClick={handleToggle}
-        className="bg-bg1 text-sm md:text-base px-4 py-2  rounded-3xl mt-4 border-2 border-solid border-black transition duration-300 ease-in-out transform hover:scale-105"
-      >
-        {hasTime ? (
+
+      {/* Button for short version, shown above the content */}
+      {!hasTime && (
+        <button
+          onClick={handleToggle}
+          className="bg-bg1 text-sm md:text-base px-4 py-2 rounded-3xl mt-4 border-2 border-solid border-black transition duration-300 ease-in-out transform hover:scale-105"
+        >
           <span className="flex items-center gap-2 text-yellowJs">
-            <FontAwesomeIcon icon={faChevronRight} />
             <span>{t.toggleTextShort}</span>
-            <FontAwesomeIcon icon={faChevronLeft} />
           </span>
-        ) : (
-          <span className="text-main1">{t.toggleTextLong}</span>
-        )}
-      </button>
-      {hasTime ? (
+        </button>
+      )}
+
+      {!hasTime ? (
         <div className="havetime flex flex-col lg:flex-row items-center justify-center w-3/4 lg:w-2/3 gap-3 md:gap-6 lg:gap-14 lg:flex-wrap pb-8 ">
           <div className={classes}>
             <p>{t.intro}</p>
@@ -298,6 +292,16 @@ const About = () => {
         </div>
       )}
 
+      {/* Button for long version, shown below the content */}
+      {hasTime && (
+        <button
+          onClick={handleToggle}
+          className="bg-bg1 text-sm md:text-base px-4 py-2 rounded-3xl mt-4 border-2 border-solid border-black transition duration-300 ease-in-out transform hover:scale-105"
+        >
+          <span className="text-main1">{t.toggleTextLong}</span>
+        </button>
+      )}
+
       <button
         onClick={() => smoothScroll("#project")}
         className="flex justify-center items-end "
@@ -305,7 +309,7 @@ const About = () => {
         <MouseDown mouseColor="#12F7D6" />
       </button>
       <div className="w-screen p-0">
-        <svg
+      <svg
           className="separator h-12 lg:h-32"
           width="99.5%"
           viewBox="0.1 0.1 180 40"

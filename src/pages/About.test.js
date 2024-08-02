@@ -19,6 +19,6 @@ describe("Contact Page", () => {
     expect(screen.getByText(/Qui suis-je ?/i)).toBeInTheDocument();
 
     // Vérifie si le texte dans le premier bloc de contenu est présent
-    expect(screen.getByText(/Je suis une développeuse /i)).toBeInTheDocument();
+    expect(screen.getByText(/Développeuse JavaScript /i)).toBeInTheDocument();
   });
 });
