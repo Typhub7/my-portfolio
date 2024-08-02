@@ -171,7 +171,7 @@ export const Contact = () => {
         {texts.infoRequest}
       </div>
       <form
-        className="flex flex-col gap-4 lg:gap-12 mb-6 lg:mb-10 w-4/5"
+        className="flex flex-col gap-4 lg:gap-12 mb-0 lg:mb-10 w-4/5"
         onSubmit={handleSubmit}
       >
         <div className="flex flex-col md:flex-row">

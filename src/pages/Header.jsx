@@ -13,7 +13,7 @@ import ukFlag from '../assets/uk-flag.png';
   const phrase2 = language === 'fr' ? "Bienvenue sur mon portfolio !" : "Welcome to my portfolio!";
 
   return (
-    <div id="menu" className="bg-bg1 flex flex-col items-center px-12 sm:px-16 md:px-32 py-0 relative bg-bg-1 overflow-hidden">
+    <div id="menu" className="bg-bg1 flex flex-col items-center px-12 sm:px-16 md:px-32 pt-4 md:py-0 relative bg-bg-1 overflow-hidden">
       <div className="flex flex-col xl:flex-row gap-4 xl:gap-0 items-center justify-between px-0 pt-8 pb-4 lg:pb-8 relative self-stretch w-full flex-[0_0_auto]">
         <div className="inline-flex items-center gap-2">
           <div className="relative">

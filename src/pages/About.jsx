@@ -16,8 +16,8 @@ const About = () => {
   const translations = {
     en: {
       about: "Who am I?",
-      toggleTextShort: "I don't have time to read",
-      toggleTextLong: "I want to know more",
+      toggleTextShort: "Short version",
+      toggleTextLong: "Long version",
       intro: (
         <>
           I am a developer specializing in{" "}
@@ -114,8 +114,8 @@ const About = () => {
     },
     fr: {
       about: "Qui suis-je ?",
-      toggleTextShort: "Je n'ai pas le temps de lire",
-      toggleTextLong: "Je veux en savoir plus",
+      toggleTextShort: "Version courte",
+      toggleTextLong: "Version longue",
       intro: (
         <>
           Je suis une développeuse spécialisée en{" "}
@@ -289,7 +289,7 @@ const About = () => {
           </div>
         </div>
       ) : (
-        <div className="notime bg-bg1 items-center p-9 text-main1 text-xs md:text-sm lg:text-base font-mono rounded-[32px_0px_32px_0px] border-2 border-solid border-bg1  h-auto w-2/3 lg:w-auto">
+        <div className="notime bg-bg1 items-center p-5 md:p-9 text-main1 text-xs md:text-sm lg:text-base font-mono rounded-[32px_0px_32px_0px] border-2 border-solid border-bg1  h-auto w-4/5 md:w-2/3 lg:w-auto">
           <p className="py-2">{t.short1}</p>
           <p className="py-2">{t.short2}</p>
           <p className="py-2">{t.short3}</p>

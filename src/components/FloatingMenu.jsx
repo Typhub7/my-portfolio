@@ -15,7 +15,7 @@ const FloatingMenu = () => {
   const contactMe = language === 'fr' ? 'Contactez-moi' : 'Contact me';
 
   return (
-    <div className="fixed top-1/4 left-2 flex flex-col items-center  md:bg-white bg-opacity-100 md:bg-opacity-80 border-2 md:border-0 rounded-3xl shadow-lg p-2 lg:p-4 z-50">
+    <div className="fixed top-3 left-4 md:top-1/4 md:left-2 flex flex-row md:flex-col w-11/12 justify-around md:w-auto h-8 md:h-auto items-center md:bg-white bg-opacity-100 md:bg-opacity-80 border-2 md:border-0 rounded-3xl shadow-lg p-2 lg:p-4 z-50">
       <button
         data-testid="menu-button"
         onClick={() => smoothScroll('#menu')}

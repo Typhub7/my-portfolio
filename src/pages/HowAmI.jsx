@@ -25,7 +25,7 @@ const HowAmIPage = () => {
         </h2>
         <LineWithDots />
         <div className="flex flex-col lg:flex-row gap-10 lg:gap-0 items-center justify-around my-4 lg:my-10">
-          <div className="bg-bg2 shadow-md shadow-main1 rounded-custom2 border-white w-64 lg:w-96 h-72 lg:h-custom-h flex justify-center items-center">
+          <div className="bg-bg2 shadow-md shadow-main1 rounded-custom2 border-white w-64 sm:w-80 lg:w-96 h-72 lg:h-custom-h flex justify-center items-center">
             <Contact />
           </div>
           <div>

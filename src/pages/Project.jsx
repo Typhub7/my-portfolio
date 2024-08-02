@@ -85,7 +85,7 @@ const ProjectPage = () => {
       </div>
 
       {/* Project Gallery */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12 mx-16">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12 mx-6 sm:mx-16">
         {projectsData.map(
           (project) =>
             (selectedTechnology === "All" ||
