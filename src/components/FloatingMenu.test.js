@@ -1,5 +1,6 @@
 import React from 'react';
-import { render, screen, fireEvent } from '@testing-library/react';
+import { render, screen } from '../setupTest.js';
+import { fireEvent } from '@testing-library/react';
 import '@testing-library/jest-dom';
 import FloatingMenu from './FloatingMenu';
 import { smoothScroll } from '../helpers/smoothScroll';
@@ -18,7 +19,14 @@ const buttonTestIds = [
 ];
 
 test('renders the FloatingMenu component with all buttons', () => {
-  render(<FloatingMenu />);
+  const providerProps = {
+    value: {
+      language: 'fr',
+      toggleLanguage: jest.fn(),
+    },
+  };
+  render(<FloatingMenu />, { providerProps });
+
 
   // Vérifie la présence des boutons en utilisant les data-testid
   buttonTestIds.forEach(testId => {

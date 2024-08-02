@@ -1,15 +1,22 @@
 import React from 'react';
-import { render, screen } from '@testing-library/react';
+import { render, screen } from '../setupTest.js';
 import '@testing-library/jest-dom'
 import LinkedIn from './LinkedIn'; 
 
 test('renders the LinkedIn component', () => {
-    render(<LinkedIn />);
+  const providerProps = {
+    value: {
+      language: 'fr',
+      toggleLanguage: jest.fn(),
+    },
+  };
+  render(<LinkedIn />, { providerProps });
+
 
     // Vérifie que le lien est rendu avec le texte "Mon LinkedIn"
     const linkElement = screen.getByRole('link', { name: /Mon LinkedIn/i });
     expect(linkElement).toBeInTheDocument();
-    expect(linkElement).toHaveAttribute('href', 'https://www.linkedin.com/in/ton-profil/');
+    expect(linkElement).toHaveAttribute('href', 'https://www.linkedin.com/in/drevon-caroline/');
     expect(linkElement).toHaveStyle('color: black');
     });
 

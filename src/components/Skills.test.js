@@ -1,11 +1,17 @@
 import React from 'react';
-import { render, screen } from '@testing-library/react';
+import { render, screen } from '../setupTest.js';
 import '@testing-library/jest-dom';
 import Skills from './Skills'; 
 
 describe('Skills Component', () => {
   test('renders all skill logos with correct src and alt text', () => {
-    render(<Skills />);
+    const providerProps = {
+      value: {
+        language: 'fr',
+        toggleLanguage: jest.fn(),
+      },
+    };
+    render(<Skills />, { providerProps });
 
     const skillLogos = [
       { name: 'JavaScript', src: 'js.png', alt: 'JavaScript' }, // Assure-toi que src correspond au nom du fichier

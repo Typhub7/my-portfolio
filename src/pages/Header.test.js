@@ -1,5 +1,5 @@
 import React from "react";
-import { render, screen } from '@testing-library/react';
+import { render, screen } from '../setupTest.js';
 import '@testing-library/jest-dom';
 import Header from './Header';
 
@@ -10,7 +10,14 @@ jest.mock('../components/Github', () => ({ color }) => <div data-testid="github-
 
 test('renders Header component with all elements',  () => {
 
-  render(<Header />);
+  const providerProps = {
+    value: {
+      language: 'fr',
+      toggleLanguage: jest.fn(),
+    },
+  };
+
+  render(<Header />, { providerProps });
 
   // Vérifie que les icônes LinkedIn et Github sont rendues avec la couleur correcte
   const linkedinIcon = screen.getByTestId('linkedin-icon');

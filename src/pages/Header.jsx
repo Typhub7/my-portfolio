@@ -6,7 +6,7 @@ import { useLanguage } from '../context/LanguageContext';
 import franceFlag from '../assets/france-flag.png';
 import ukFlag from '../assets/uk-flag.png';
 
-export const Header = () => {
+ const Header = () => {
   const { language, toggleLanguage } = useLanguage();
 
   const phrase1 = language === 'fr' ? "Bonjour, je suis Caroline Drevon, développeuse Front-end." : "Hello, I am Caroline Drevon, Front-end Developer.";
