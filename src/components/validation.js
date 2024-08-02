@@ -9,6 +9,7 @@ export const validateEmail = (email) => {
 };
 
 export const validateMessage = (message) => {
-const messageRegex = /^[a-zA-Z0-9\s.,!?'"@#$%^&*()_+\-=\u00C0-\u00FF]{1,2500}$/;
+  const messageRegex =
+    /^[a-zA-Z0-9\s.,!?'"@#$%^&*()_+\-=\u00C0-\u00FF]{1,2500}$/;
   return messageRegex.test(message);
 };

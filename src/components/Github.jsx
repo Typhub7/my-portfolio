@@ -1,11 +1,11 @@
-import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
-import { useLanguage } from '../context/LanguageContext';
+import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { useLanguage } from "../context/LanguageContext";
 
-const Github = ({ color = 'black' }) => {
+const Github = ({ color = "black" }) => {
   const { language } = useLanguage();
-  const label = language === 'fr' ? 'Mon Github' : 'My Github';
+  const label = language === "fr" ? "Mon Github" : "My Github";
 
   return (
     <a

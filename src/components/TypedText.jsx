@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 
 const TypedText = ({ phrase, initialDelay }) => {
-  const [currentText, setCurrentText] = useState('');
+  const [currentText, setCurrentText] = useState("");
 
   useEffect(() => {
     const animateText = () => {
@@ -14,7 +14,7 @@ const TypedText = ({ phrase, initialDelay }) => {
         } else {
           clearInterval(interval);
         }
-      }, 30); // Vitesse de frappe 
+      }, 30); // Vitesse de frappe
 
       return () => clearInterval(interval);
     };
@@ -25,9 +25,8 @@ const TypedText = ({ phrase, initialDelay }) => {
 
     return () => {
       clearTimeout(timeout);
-      setCurrentText(''); // Réinitialise le texte à la démontage
+      setCurrentText(""); // Réinitialise le texte à la démontage
     };
-
   }, [phrase, initialDelay]);
 
   return (

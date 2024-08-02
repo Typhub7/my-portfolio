@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 const Button = ({
   label,
@@ -6,18 +6,18 @@ const Button = ({
   textColor,
   bgHoverColor,
   textHoverColor,
-  borderRadius = '32px',
-  }) => {
+  borderRadius = "32px",
+}) => {
   const [isHovered, setIsHovered] = useState(false);
 
   const buttonStyle = {
     backgroundColor: isHovered ? bgHoverColor : bgColor,
     color: isHovered ? textHoverColor : textColor,
     borderRadius: borderRadius,
-    padding: '10px 20px',
+    padding: "10px 20px",
     border: `2px solid ${bgColor}`,
-    cursor: 'pointer',
-    transition: 'background-color 0.3s, color 0.3s',
+    cursor: "pointer",
+    transition: "background-color 0.3s, color 0.3s",
   };
 
   const handleMouseEnter = () => {

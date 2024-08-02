@@ -1,11 +1,11 @@
-import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import { useLanguage } from '../context/LanguageContext';
+import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { useLanguage } from "../context/LanguageContext";
 
-const LinkedIn = ({ color = 'black' }) => {
+const LinkedIn = ({ color = "black" }) => {
   const { language } = useLanguage();
-  const label = language === 'fr' ? 'Mon LinkedIn' : 'My LinkedIn';
+  const label = language === "fr" ? "Mon LinkedIn" : "My LinkedIn";
 
   return (
     <a

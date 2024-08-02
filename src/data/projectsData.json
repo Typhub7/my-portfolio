@@ -6,7 +6,7 @@
     "githubLink": "https://typhub7.github.io/booki-starter-code/",
     "demoLink": "https://typhub7.github.io/booki-starter-code/",
     "technologies": ["HTML5", "CSS3"],
-    "description" : "Objectif : Transformer une maquette en site web responsive avec HTML5 & CSS3",
+    "description": "Objectif : Transformer une maquette en site web responsive avec HTML5 & CSS3",
     "badgeText": "Responsive"
   },
   {
@@ -16,7 +16,7 @@
     "githubLink": "https://github.com/Typhub7/P3-Ohmyfood",
     "demoLink": "https://typhub7.github.io/P3-Ohmyfood/",
     "technologies": ["HTML5", "CSS3", "Sass"],
-    "description" : "Objectifs : Intégrer et dynamiser une page web avec des animations CSS3",
+    "description": "Objectifs : Intégrer et dynamiser une page web avec des animations CSS3",
     "badgeText": "Animations"
   },
   {
@@ -26,7 +26,7 @@
     "githubLink": "https://github.com/Typhub7/GameOn-website-FR",
     "demoLink": "typhub7.github.io/GameOn-website-FR/",
     "technologies": ["HTML5", "CSS3", "Javascript"],
-    "description" : "Objectif : Créer une landing page avec Javascript",
+    "description": "Objectif : Créer une landing page avec Javascript",
     "badgeText": "Premier projet JS"
   },
   {
@@ -36,7 +36,7 @@
     "githubLink": "https://github.com/Typhub7/Front-End-Fisheye",
     "demoLink": "https://typhub7.github.io/Front-End-Fisheye/",
     "technologies": ["HTML5", "CSS3", "JavaScript", "Best"],
-    "description" : "Objectif : Créer un site accessible pour une plateforme de photographes",
+    "description": "Objectif : Créer un site accessible pour une plateforme de photographes",
     "badgeText": "Accessibilité"
   },
   {
@@ -46,7 +46,7 @@
     "githubLink": "https://github.com/Typhub7/Les-Petits-plats",
     "demoLink": "https://typhub7.github.io/Les-Petits-plats/",
     "technologies": ["HTML5", "CSS3", "JavaScript", "Best"],
-    "description" : "Objectif : Développer un algorithme de recherche en JavaScript",
+    "description": "Objectif : Développer un algorithme de recherche en JavaScript",
     "badgeText": "Green code"
   },
   {
@@ -55,8 +55,8 @@
     "image": "/images/project6.jpg",
     "githubLink": "https://github.com/Typhub7/Kasa",
     "demoLink": "https://typhub7.github.io/Kasa/",
-    "technologies": ["HTML5", "CSS3", "JavaScript","React","Sass"],
-    "description" : "Objectif : Développer une application Web avec React et React Router",
+    "technologies": ["HTML5", "CSS3", "JavaScript", "React", "Sass"],
+    "description": "Objectif : Développer une application Web avec React et React Router",
     "badgeText": "Premier projet REACT"
   },
   {
@@ -65,8 +65,16 @@
     "image": "/images/project7.jpg",
     "githubLink": "https://github.com/Typhub7/SportSee",
     "demoLink": "https://typhub7.github.io/SportSee/",
-    "technologies": ["HTML5", "CSS3", "JavaScript","React","Tailwind","Zod","TypeScript"],
-    "description" : "Objectif : Développer un tableau de bord d'analytics avec React",
+    "technologies": [
+      "HTML5",
+      "CSS3",
+      "JavaScript",
+      "React",
+      "Tailwind",
+      "Zod",
+      "TypeScript"
+    ],
+    "description": "Objectif : Développer un tableau de bord d'analytics avec React",
     "badgeText": "Call api - Recharts"
   },
   {
@@ -75,8 +83,16 @@
     "image": "/images/project8.png",
     "githubLink": "https://github.com/Typhub7/argentbank-front",
     "demoLink": "https://github.com/Typhub7/argentbank-front#installation",
-    "technologies": ["HTML5", "CSS3", "JavaScript","React","Tailwind","Redux", "Best"],
-    "description" : "Objectif : Utiliser une API pour un compte utilisateur bancaire avec React",
+    "technologies": [
+      "HTML5",
+      "CSS3",
+      "JavaScript",
+      "React",
+      "Tailwind",
+      "Redux",
+      "Best"
+    ],
+    "description": "Objectif : Utiliser une API pour un compte utilisateur bancaire avec React",
     "badgeText": "Api Rest - Swagger"
   }
 ]
