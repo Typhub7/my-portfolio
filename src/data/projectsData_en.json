@@ -2,7 +2,7 @@
   {
     "id": 1,
     "title": "Booki",
-    "image": "/images/project1.jpg",
+    "image": "/images/project1.webp",
     "githubLink": "https://typhub7.github.io/booki-starter-code/",
     "demoLink": "https://typhub7.github.io/booki-starter-code/",
     "technologies": ["HTML5", "CSS3"],
@@ -12,7 +12,7 @@
   {
     "id": 2,
     "title": "Ohmyfood",
-    "image": "/images/project2.png",
+    "image": "/images/project2.webp",
     "githubLink": "https://github.com/Typhub7/P3-Ohmyfood",
     "demoLink": "https://typhub7.github.io/P3-Ohmyfood/",
     "technologies": ["HTML5", "CSS3", "Sass"],
@@ -22,17 +22,17 @@
   {
     "id": 3,
     "title": "GameOn",
-    "image": "/images/project3.png",
+    "image": "/images/project3.webp",
     "githubLink": "https://github.com/Typhub7/GameOn-website-FR",
     "demoLink": "typhub7.github.io/GameOn-website-FR/",
     "technologies": ["HTML5", "CSS3", "JavaScript"],
     "description": "Objective: Create a landing page with JavaScript",
-    "badgeText": "First JS Project"
+    "badgeText": "Landing Page"
   },
   {
     "id": 4,
     "title": "FishEye",
-    "image": "/images/project4.png",
+    "image": "/images/project4.webp",
     "githubLink": "https://github.com/Typhub7/Front-End-Fisheye",
     "demoLink": "https://typhub7.github.io/Front-End-Fisheye/",
     "technologies": ["HTML5", "CSS3", "JavaScript", "Best"],
@@ -42,27 +42,27 @@
   {
     "id": 5,
     "title": "Petits plats",
-    "image": "/images/project5.jpg",
+    "image": "/images/project5.webp",
     "githubLink": "https://github.com/Typhub7/Les-Petits-plats",
     "demoLink": "https://typhub7.github.io/Les-Petits-plats/",
-    "technologies": ["HTML5", "CSS3", "JavaScript", "Best"],
+    "technologies": ["HTML5", "CSS3", "JavaScript"],
     "description": "Objective: Develop a search algorithm in JavaScript",
     "badgeText": "Green code"
   },
   {
     "id": 6,
     "title": "Kasa",
-    "image": "/images/project6.jpg",
+    "image": "/images/project6.webp",
     "githubLink": "https://github.com/Typhub7/Kasa",
     "demoLink": "https://typhub7.github.io/Kasa/",
-    "technologies": ["HTML5", "CSS3", "JavaScript", "React", "Sass"],
+    "technologies": ["HTML5", "CSS3", "JavaScript", "React", "Sass","Best"],
     "description": "Objective: Develop a web application with React and React Router",
-    "badgeText": "First React Project"
+    "badgeText": "Gallery - DropDown"
   },
   {
     "id": 7,
     "title": "SportSee",
-    "image": "/images/project7.jpg",
+    "image": "/images/project7.webp",
     "githubLink": "https://github.com/Typhub7/SportSee",
     "demoLink": "https://typhub7.github.io/SportSee/",
     "technologies": [
@@ -72,7 +72,8 @@
       "React",
       "Tailwind",
       "Zod",
-      "TypeScript"
+      "TypeScript",
+      "Best"
     ],
     "description": "Objective: Develop an analytics dashboard with React",
     "badgeText": "API Call - Recharts"
@@ -80,7 +81,7 @@
   {
     "id": 8,
     "title": "ArgentBank",
-    "image": "/images/project8.png",
+    "image": "/images/project8.webp",
     "githubLink": "https://github.com/Typhub7/argentbank-front",
     "demoLink": "https://github.com/Typhub7/argentbank-front#installation",
     "technologies": [
@@ -89,8 +90,7 @@
       "JavaScript",
       "React",
       "Tailwind",
-      "Redux",
-      "Best"
+      "Redux"
     ],
     "description": "Objective: Use an API for a bank user account with React",
     "badgeText": "Rest API - Swagger"

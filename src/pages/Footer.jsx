@@ -5,10 +5,11 @@ import { useLanguage } from "../context/LanguageContext";
 
 export const Footer = () => {
   const { language } = useLanguage();
+  const currentYear = new Date().getFullYear();
   const copyright =
     language === "fr"
-      ? "2024 Caroline Drevon. Tous droits réservés."
-      : "2024 Caroline Drevon. All rights reserved.";
+      ? `${currentYear} Caroline Drevon. Tous droits réservés.`
+      : `${currentYear} Caroline Drevon. All rights reserved.`;
 
   return (
     <footer className="bg-bg1 flex flex-col items-center px-10 lg:px-32 py-8 relative overflow-hidden">

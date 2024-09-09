@@ -21,7 +21,7 @@ import ukFlag from '../assets/uk-flag.png';
             <TypedText phrase={phrase2} initialDelay={2000} />
           </div>
         </div>
-        <div className="inline-flex items-center gap-16">
+        <div className="inline-flex items-center gap-4 md:gap-8 lg:gap-16">
           <div className="inline-flex items-center gap-2">
             <LinkedIn color="#12F7D6" />
           </div>

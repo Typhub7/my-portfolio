@@ -2,12 +2,16 @@ import React from "react";
 import { useLanguage } from "../context/LanguageContext";
 import Button from "../components/OvaleButton";
 
+
 const ContactCard = () => {
   const { language } = useLanguage();
+  const birthdate = [7, 12,1979]
+  const age = new Date().getFullYear() - birthdate[2];
+  
   const yearsCity =
     language === "fr"
-      ? "46 ans - 38440 Meyrieu-les-étangs"
-      : "46 years - 38440 Meyrieu-les-Étangs";
+      ? `${age} ans - 38440 Meyrieu-les-étangs`
+      : `${age} years - Meyrieu-les-Étangs 38440`;
   const spokenLanguages =
     language === "fr"
       ? "Anglais B2 - Italien A2"
@@ -16,7 +20,9 @@ const ContactCard = () => {
   const languageTitle = language === "fr" ? "Langues" : "Languages";
   const partial =
     language === "fr" ? "Temps plein ou partiel" : "Full or Part-time";
+  const formation = language === "fr" ? "Éligible apprentissage/alternance" : "Eligible for apprenticeship/alternation";
   const distance = language === "fr" ? "Distanciel" : "Remote";
+  const rqth = language === "fr" ? "RQTH" : "Recognition of disabled worker status ";
   const downloadCV =
     language === "fr" ? "Télécharger mon CV" : "Download my CV";
 
@@ -30,12 +36,14 @@ const ContactCard = () => {
         <a href="mailto:drevon.caroline@gmail.com">drevon.caroline@gmail.com</a>
       </p>
       <p className="my-1 text-xs lg:text-base"> {yearsCity} </p>
+      <p className="my-1 text-xs lg:text-base"> {rqth} </p>
       <div className=" py-1">
         <p className="my-1 text-xs lg:text-base">
           {" "}
           <strong> {languageTitle} : </strong>{" "}
         </p>
         <p className="my-1 text-xs lg:text-base"> {spokenLanguages}</p>
+
       </div>
       <div>
         <p className="my-1 text-xs lg:text-base">
@@ -43,11 +51,13 @@ const ContactCard = () => {
           <strong> {searchFor} : </strong>{" "}
         </p>
         <p className="my-1 text-xs lg:text-base"> {partial} </p>
+        <p className="my-1 text-xs lg:text-base"> {formation} </p>
         <p className="my-1 text-xs lg:text-base"> {distance} </p>
+
       </div>
       <div className="self-center py-4 px-4 ">
         <a
-          href="/path/to/your-cv.pdf"
+          href="CV-Caroline_DREVON.pdf"
           download
           className="text-xs lg:text-base"
         >

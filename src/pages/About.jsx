@@ -51,8 +51,8 @@ const About = () => {
       hobbies: (
         <>
           Outside of coding, I find a precious balance spending time with my
-          husband and children. I also nurture a passion for archaeology and
-          metal detecting, interests that reflect my{" "}
+          husband and children. I also nurture a passion for metal detecting and target shooting
+          , interests that reflect my{" "}
           <span className="text-yellowJs">curiosity</span> and{" "}
           <span className="text-yellowJs">perseverance</span>.
         </>
@@ -84,25 +84,25 @@ const About = () => {
       ),
       short2: (
         <>
-          Former <span className="text-yellowJs">biomedical engineer</span>,
+          Former <span className="text-yellowJs">biomedical engineer</span>, with 
           14-month career change via Openclassroom.
         </>
       ),
       short3: (
         <>
-          I love <span className="text-yellowJs">challenges</span>, continuous
+          I love :<span className="text-yellowJs">challenges</span>, continuous
           learning, and <span className="text-yellowJs">scientific rigor.</span>
         </>
       ),
       short4: (
         <>
-          Spending time with <span className="text-yellowJs">my family</span>,
-          passionate about metal detecting.
+          And also : Spending time with <span className="text-yellowJs">my family</span>,
+           metal detecting and target shooting.
         </>
       ),
       short5: (
         <>
-          <span className="text-yellowJs">Looking for a job</span> as a
+          <span className="text-yellowJs">Looking for a job :</span> as a
           Front-End developer or QA tester, recognized as a disabled worker.
         </>
       ),
@@ -150,7 +150,7 @@ const About = () => {
         <>
           En dehors du code, je trouve un équilibre précieux en passant du temps
           avec mon mari et mes enfants. Je nourris également une passion pour
-          l'archéologie et la détection de métaux, des intérêts qui reflètent ma{" "}
+          la detection de métaux et le tir sportif, des intérêts qui reflètent ma{" "}
           <span className="text-yellowJs">curiosité</span> et ma{" "}
           <span className="text-yellowJs">persévérance</span>.
         </>
@@ -184,25 +184,25 @@ const About = () => {
       short2: (
         <>
           Ancienne<span className="text-yellowJs"> ingénieure biomédicale</span>
-          , reconversion de 14 mois via Openclassroom.
+          , avec une reconversion de 14 mois via Openclassroom.
         </>
       ),
       short3: (
         <>
-          J'aime les <span className="text-yellowJs">défis</span>,
+          J'aime : les <span className="text-yellowJs">défis</span>,
           l'apprentissage continu, et la{" "}
-          <span className="text-yellowJs">rigueur scientifique.</span>
+          <span className="text-yellowJs">rigueur scientifique;</span>
         </>
       ),
       short4: (
         <>
-          Passer du temps avec <span className="text-yellowJs">ma famille</span>
-          , passionnée de detection de métaux.{" "}
+          Mais aussi : Passer du temps avec <span className="text-yellowJs">ma famille</span>
+          , la detection de métaux et le tir sportif.{" "}
         </>
       ),
       short5: (
         <>
-          <span className="text-yellowJs">En recherche emploi</span>{" "}
+          <span className="text-yellowJs">En recherche emploi :</span>{" "}
           développeuse Front-End ou testeuse QA, reconnue travailleuse
           handicapée.{" "}
         </>
@@ -229,11 +229,11 @@ const About = () => {
       <div className="w-screen">
         <svg
           className="separator h-12 lg:h-32"
-          width="99.5%"
-          viewBox="0.1 0.1 180 40"
+          width="100vw"
+          viewBox="0 0 180 40"
           preserveAspectRatio="none"
         >
-          <g transform="translate(-18.298844,-77.973964)">
+          <g transform="translate(-18.298844,-78.973964)">
             <path
               style={{ fill: "#12F7D6" }}
               d="M 31.615583,86.351641 H 192.16499 v 26.901969 c 0,0 -32.03411,-14.237983 -59.62682,-12.72484 -22.34188,1.2252 -54.779359,9.72634 -54.779359,9.72634 0,0 -22.029534,3.62882 -34.471238,-1.88988 -12.441702,-5.51871 -11.67199,-22.013589 -11.67199,-22.013589 z"
@@ -308,14 +308,15 @@ const About = () => {
       >
         <MouseDown mouseColor="#12F7D6" />
       </button>
-      <div className="w-screen p-0">
+      <div className="w-screen">
       <svg
           className="separator h-12 lg:h-32"
-          width="99.5%"
-          viewBox="0.1 0.1 180 40"
+          width="100vw"
+          viewBox="0 0 180 40"
           preserveAspectRatio="none"
+          overflow="visible"
         >
-          <g transform="scale(1, -1) translate(-17, -130)">
+          <g transform="scale(1, -1) translate(-18.1, -121)">
             <path
               style={{ fill: "#12F7D6" }}
               d="M 31.615583,86.351641 H 192.16499 v 26.901969 c 0,0 -32.03411,-14.237983 -59.62682,-12.72484 -22.34188,1.2252 -54.779359,9.72634 -54.779359,9.72634 0,0 -22.029534,3.62882 -34.471238,-1.88988 -12.441702,-5.51871 -11.67199,-22.013589 -11.67199,-22.013589 z"

@@ -46,6 +46,8 @@ module.exports = {
       borderRadius: {
         custom: "160px 0 160px 0",
         custom2: "80px 80px 80px 80px",
+        custom3: "40px 40px 40px 40px",
+
       },
       textShadow: {
         custom: "1px 2px 3px black",

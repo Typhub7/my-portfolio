@@ -1,5 +1,5 @@
 import React from "react";
-import caroPhoto from "../assets/caro.png";
+import caroPhoto from "../assets/Caro.webp";
 
 const WelcomeAnimation = () => {
   return (
